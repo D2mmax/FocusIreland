@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-         if (DialogueManager.Instance != null && DialogueManager.Instance.isInDialogue) return;
+        if (DialogueScreenManager.Instance != null && DialogueScreenManager.Instance.IsInDialogue) return;
+
         var keyboard = Keyboard.current;
         if (keyboard == null) return;
 

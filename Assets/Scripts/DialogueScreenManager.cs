@@ -1,0 +1,160 @@
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.InputSystem;
+
+public class DialogueScreenManager : MonoBehaviour
+{
+    public static DialogueScreenManager Instance { get; private set; }
+
+    [Header("Screen Root")]
+    public CanvasGroup dialogueScreenGroup;
+
+    [Header("Background & Characters")]
+    public Image backgroundImage;
+    public Image npcImage;
+    public Image playerImage;
+
+    [Header("Text")]
+    public TextMeshProUGUI npcNameText;
+    public TextMeshProUGUI dialogueText;
+
+    [Header("Choice Buttons (exactly 3)")]
+    public Button[] choiceButtons;
+    private TextMeshProUGUI[] choiceLabels;
+
+    [Header("Close Button")]
+    [Tooltip("A single button shown when a node has no choices — press to continue/close")]
+    public Button closeButton;
+
+    public bool IsInDialogue { get; private set; }
+    private DialogueTree currentTree;
+    private DialogueNode currentNode;
+
+    // Prevents E key from closing immediately after opening
+    private float inputCooldown = 0f;
+    private const float COOLDOWN_DURATION = 0.2f;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        choiceLabels = new TextMeshProUGUI[choiceButtons.Length];
+        for (int i = 0; i < choiceButtons.Length; i++)
+            choiceLabels[i] = choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+
+        if (closeButton != null)
+            closeButton.onClick.AddListener(EndDialogue);
+
+        HideScreen();
+    }
+
+    public void StartRepeatDialogue(DialogueSceneConfig config)
+    {
+        backgroundImage.sprite = config.backgroundSprite;
+        npcImage.sprite        = config.npcSprite;
+        playerImage.sprite     = config.playerSprite;
+        npcNameText.text       = config.npcName;
+        dialogueText.text      = config.repeatLine;
+
+        foreach (var btn in choiceButtons) btn.gameObject.SetActive(false);
+        if (closeButton != null) closeButton.gameObject.SetActive(true);
+
+        IsInDialogue = true;
+        inputCooldown = COOLDOWN_DURATION;
+        ShowScreen();
+    }
+
+    public void StartDialogue(DialogueSceneConfig config, DialogueTree tree)
+    {
+        currentTree = tree;
+
+        backgroundImage.sprite = config.backgroundSprite;
+        npcImage.sprite        = config.npcSprite;
+        playerImage.sprite     = config.playerSprite;
+        npcNameText.text       = config.npcName;
+
+        IsInDialogue = true;
+        inputCooldown = COOLDOWN_DURATION;
+        ShowScreen();
+        ShowNode(tree.GetNode(tree.startNodeID));
+    }
+
+    void ShowNode(DialogueNode node)
+    {
+        if (node == null) { EndDialogue(); return; }
+        currentNode = node;
+
+        dialogueText.text = node.dialogueText;
+
+        foreach (var btn in choiceButtons) btn.gameObject.SetActive(false);
+        if (closeButton != null) closeButton.gameObject.SetActive(false);
+
+        bool hasChoices = node.choices != null && node.choices.Count > 0;
+
+        if (!hasChoices)
+        {
+            // Show close/continue button
+            if (closeButton != null) closeButton.gameObject.SetActive(true);
+            return;
+        }
+
+        int count = Mathf.Min(node.choices.Count, choiceButtons.Length);
+        for (int i = 0; i < count; i++)
+        {
+            int idx = i;
+            choiceLabels[i].text = node.choices[i].choiceText;
+            choiceButtons[i].gameObject.SetActive(true);
+            choiceButtons[i].onClick.RemoveAllListeners();
+            choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(idx));
+        }
+    }
+
+    void OnChoiceSelected(int index)
+    {
+        DialogueChoice choice = currentNode.choices[index];
+
+        if (EHCManager.Instance != null)
+            EHCManager.Instance.ApplyEffect(choice.ehcEffect);
+
+        if (string.IsNullOrEmpty(choice.nextNodeID))
+            EndDialogue();
+        else
+            ShowNode(currentTree.GetNode(choice.nextNodeID));
+    }
+
+    void Update()
+    {
+        if (!IsInDialogue) return;
+
+        if (inputCooldown > 0f)
+        {
+            inputCooldown -= Time.deltaTime;
+        }
+    }
+
+    void EndDialogue()
+    {
+        IsInDialogue = false;
+        HideScreen();
+    }
+
+    void ShowScreen()
+    {
+        dialogueScreenGroup.alpha          = 1f;
+        dialogueScreenGroup.interactable   = true;
+        dialogueScreenGroup.blocksRaycasts = true;
+    }
+
+    void HideScreen()
+    {
+        dialogueScreenGroup.alpha          = 0f;
+        dialogueScreenGroup.interactable   = false;
+        dialogueScreenGroup.blocksRaycasts = false;
+        foreach (var btn in choiceButtons) btn.gameObject.SetActive(false);
+        if (closeButton != null) closeButton.gameObject.SetActive(false);
+    }
+}

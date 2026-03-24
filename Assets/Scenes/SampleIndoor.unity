@@ -2311,15 +2311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c80526139ca6b40b1408e865631540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
-  openingLine: Hello! How are you?
-  choices:
-  - I'm doing well thanks
-  - I'm struggling a bit
-  - I don't want to talk
-  responses:
-  - That's great to hear! Keep it up!
-  - That's okay, things will get better. You're not alone.
-  - That's okay, I'm here if you need me.
+  sceneConfig: {fileID: 0}
+  dialogueTree: {fileID: 0}
+  interactPrompt: {fileID: 0}
 --- !u!114 &415134735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12372,6 +12366,10 @@ PrefabInstance:
     - target: {fileID: 2456270668381442899, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456270668381442899, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

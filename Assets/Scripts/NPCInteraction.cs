@@ -3,52 +3,59 @@ using UnityEngine.InputSystem;
 
 public class NPCInteraction : MonoBehaviour
 {
-    [SerializeField] private string openingLine = "Hello! How are you?";
-    [SerializeField] private string[] choices = new string[]
-    {
-        "I'm doing well thanks",
-        "I'm struggling a bit",
-        "I don't want to talk"
-    };
-    [SerializeField] private string[] responses = new string[]
-    {
-        "That's great to hear! Keep it up!",
-        "That's okay, things will get better. You're not alone.",
-        "That's okay, I'm here if you need me."
-    };
+    [Header("Dialogue Data")]
+    public DialogueSceneConfig sceneConfig;
+    public DialogueTree dialogueTree;
+
+    [Header("Prompt (optional)")]
+    public GameObject interactPrompt;
 
     private bool playerInRange = false;
+    private bool hasSpoken = false;
+    private float interactCooldown = 0f;
+    private const float COOLDOWN_DURATION = 0.3f;
+
+    void Start()
+    {
+        if (interactPrompt) interactPrompt.SetActive(false);
+    }
 
     void Update()
     {
-        if (playerInRange && Keyboard.current.eKey.wasPressedThisFrame)
+        if (interactCooldown > 0f)
         {
-            if (DialogueManager.Instance.isInDialogue)
-                DialogueManager.Instance.CloseDialogue();
-            else
-                DialogueManager.Instance.StartDialogue(openingLine, choices, responses);
+            interactCooldown -= Time.deltaTime;
+            return;
         }
 
-        if (DialogueManager.Instance.isInDialogue)
+        if (!playerInRange) return;
+        if (DialogueScreenManager.Instance != null && DialogueScreenManager.Instance.IsInDialogue) return;
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
         {
-            if (Keyboard.current.digit1Key.wasPressedThisFrame)
-                DialogueManager.Instance.SelectChoice(0);
-            if (Keyboard.current.digit2Key.wasPressedThisFrame)
-                DialogueManager.Instance.SelectChoice(1);
-            if (Keyboard.current.digit3Key.wasPressedThisFrame)
-                DialogueManager.Instance.SelectChoice(2);
+            interactCooldown = COOLDOWN_DURATION;
+            if (hasSpoken)
+                DialogueScreenManager.Instance.StartRepeatDialogue(sceneConfig);
+            else
+            {
+                hasSpoken = true;
+                DialogueScreenManager.Instance.StartDialogue(sceneConfig, dialogueTree);
+            }
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-            playerInRange = true;
+        if (!other.CompareTag("Player")) return;
+        playerInRange = true;
+        interactCooldown = COOLDOWN_DURATION;
+        if (interactPrompt) interactPrompt.SetActive(true);
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-            playerInRange = false;
+        if (!other.CompareTag("Player")) return;
+        playerInRange = false;
+        if (interactPrompt) interactPrompt.SetActive(false);
     }
 }
