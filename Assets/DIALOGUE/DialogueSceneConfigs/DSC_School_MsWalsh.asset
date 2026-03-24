@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9110263bbb4dc9f46a3f7f909b4ddabf, type: 3}
   m_Name: DSC_School_MsWalsh
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
-  npcName: 
-  npcSprite: {fileID: 0}
-  playerSprite: {fileID: 0}
+  npcName: Ms. Walsh
+  npcSprite: {fileID: 1644883130, guid: 2f73fc67b1be9424c813d8ca79314077, type: 3}
+  playerSprite: {fileID: 2011927712, guid: 3e57e36d3ff2bd94b8467b56145ed1da, type: 3}
   backgroundSprite: {fileID: 0}
-  repeatLine: Hey again!
+  repeatLine: Don't forget that homework! And remember my door is always open.

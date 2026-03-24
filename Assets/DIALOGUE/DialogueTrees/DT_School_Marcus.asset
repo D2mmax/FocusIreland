@@ -13,4 +13,41 @@ MonoBehaviour:
   m_Name: DT_School_Marcus
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
   startNodeID: start
-  nodes: []
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: Hey, you alright? You've been really quiet today. Did something
+      happen?
+    choices:
+    - choiceText: I'm fine, just tired
+      nextNodeID: tired
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 5
+    - choiceText: Not really, things are tough at home
+      nextNodeID: tough
+      ehcEffect:
+        energyDelta: 5
+        hopeDelta: 10
+        connectionDelta: 15
+    - choiceText: Leave me alone
+      nextNodeID: alone
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: -5
+        connectionDelta: -10
+  - nodeID: tired
+    speaker: 0
+    dialogueText: Okay fair enough. Let me know if you want to hang out at lunch
+      though, yeah?
+    choices: []
+  - nodeID: tough
+    speaker: 0
+    dialogueText: That sounds rough, I'm sorry. I don't really know what to say but...
+      I'm here if you need me.
+    choices: []
+  - nodeID: alone
+    speaker: 0
+    dialogueText: Oh... sorry. I didn't mean to bother you.
+    choices: []

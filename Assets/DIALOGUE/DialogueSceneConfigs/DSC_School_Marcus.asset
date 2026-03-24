@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9110263bbb4dc9f46a3f7f909b4ddabf, type: 3}
   m_Name: DSC_School_Marcus
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
-  npcName: 
-  npcSprite: {fileID: 0}
-  playerSprite: {fileID: 0}
+  npcName: Marcus
+  npcSprite: {fileID: -1922187288, guid: 6befdd892fb230f4992b77419ee24ee1, type: 3}
+  playerSprite: {fileID: 2011927712, guid: 3e57e36d3ff2bd94b8467b56145ed1da, type: 3}
   backgroundSprite: {fileID: 0}
+  repeatLine: Hey, you doing alright?

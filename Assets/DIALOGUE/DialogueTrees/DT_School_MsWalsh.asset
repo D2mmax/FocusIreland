@@ -13,4 +13,42 @@ MonoBehaviour:
   m_Name: DT_School_MsWalsh
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
   startNodeID: start
-  nodes: []
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: I noticed you didn't hand in your homework today. Is everything
+      okay?
+    choices:
+    - choiceText: I forgot, sorry
+      nextNodeID: forgot
+      ehcEffect:
+        energyDelta: -10
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: I've been having a hard time at home
+      nextNodeID: hard
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 20
+        connectionDelta: 20
+    - choiceText: It's none of your business
+      nextNodeID: rude
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: -10
+        connectionDelta: -20
+  - nodeID: forgot
+    speaker: 0
+    dialogueText: That's okay, just make sure you get it in by Friday. My door is
+      open if you need anything.
+    choices: []
+  - nodeID: hard
+    speaker: 0
+    dialogueText: Thank you for telling me that. That takes courage. Let's have a
+      proper chat after class, okay?
+    choices: []
+  - nodeID: rude
+    speaker: 0
+    dialogueText: I'm not trying to pry. I just want to make sure you're okay. I'm
+      here whenever you're ready.
+    choices: []
