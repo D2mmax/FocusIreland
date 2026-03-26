@@ -1,16 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
+    [Header("Item_MiniGame")]
     public Card cardPrefab;
     public Transform grid;
     public Sprite[] fruits;
     public Sprite cardBack;
+    [Header("Item_MiniGame")]
+    public int score = 0;
+    public TextMeshProUGUI scoreText;
 
     private List<Card> flipped = new List<Card>();
     public bool lockBoard = false;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+
 
     void Start()
     {
@@ -59,5 +73,11 @@ public class GameManager : MonoBehaviour
 
         flipped.Clear();
         lockBoard = false;
+    }
+
+    public void AddScore(int amount)
+    {
+        score += amount;
+        scoreText.text = "Score: " + score;
     }
 }

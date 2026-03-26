@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: c529fdcea50d01a47aad2aa99d96da68
+  - enabled: 1
     path: Assets/Scenes/ShelterScene.unity
     guid: e96fa112b05e33e44bf1ab564b669e38
   - enabled: 1
@@ -17,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CityScene.unity
     guid: c373db3c308e9844ca3b56cf8b9937db
+  - enabled: 1
+    path: Assets/Scenes/ItemDrop_Mini-Game.unity
+    guid: 5b8c8062ce9ec9d4082561bf800fd3b7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6b8e30bef0cfa6b46b47c95b5a24d2c2, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
