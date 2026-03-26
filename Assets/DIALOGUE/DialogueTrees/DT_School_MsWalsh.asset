@@ -16,39 +16,37 @@ MonoBehaviour:
   nodes:
   - nodeID: start
     speaker: 0
-    dialogueText: I noticed you didn't hand in your homework today. Is everything
-      okay?
+    dialogueText: Good morning. Before we get started I need everyone to complete
+      the activity on the board. It should help you focus for the day. Are you ready?
     choices:
-    - choiceText: I forgot, sorry
-      nextNodeID: forgot
+    - choiceText: Yeah I'm ready
+      nextNodeID: ready
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 10
+        connectionDelta: 0
+    - choiceText: I'm really tired today
+      nextNodeID: tired
       ehcEffect:
         energyDelta: -10
         hopeDelta: 0
         connectionDelta: 0
-    - choiceText: I've been having a hard time at home
-      nextNodeID: hard
-      ehcEffect:
-        energyDelta: 0
-        hopeDelta: 20
-        connectionDelta: 20
-    - choiceText: It's none of your business
-      nextNodeID: rude
+    - choiceText: Do I have to?
+      nextNodeID: reluctant
       ehcEffect:
         energyDelta: 0
         hopeDelta: -10
-        connectionDelta: -20
-  - nodeID: forgot
+        connectionDelta: 0
+  - nodeID: ready
     speaker: 0
-    dialogueText: That's okay, just make sure you get it in by Friday. My door is
-      open if you need anything.
+    dialogueText: Great attitude. Head to your desk and get started.
     choices: []
-  - nodeID: hard
+  - nodeID: tired
     speaker: 0
-    dialogueText: Thank you for telling me that. That takes courage. Let's have a
-      proper chat after class, okay?
+    dialogueText: I know mornings are hard. Do your best, that is all I ask.
     choices: []
-  - nodeID: rude
+  - nodeID: reluctant
     speaker: 0
-    dialogueText: I'm not trying to pry. I just want to make sure you're okay. I'm
-      here whenever you're ready.
+    dialogueText: I am afraid so. Everyone has to do it. I think you might actually
+      enjoy it.
     choices: []

@@ -1,18 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-// ---------------------------------------------------------------------------
-//  EHCManager  — persistent singleton that owns Energy, Hope, Connection stats
-//  Uses sprite swapping instead of sliders — assign 5 sprites per stat (full to empty)
-// ---------------------------------------------------------------------------
 public class EHCManager : MonoBehaviour
 {
     public static EHCManager Instance { get; private set; }
 
     [Header("Starting Values (0-100)")]
-    [Range(0, 100)] public int energy     = 100;
-    [Range(0, 100)] public int hope       = 100;
-    [Range(0, 100)] public int connection = 100;
+    [Range(0, 100)] public int energy     = 50;
+    [Range(0, 100)] public int hope       = 50;
+    [Range(0, 100)] public int connection = 50;
 
     [Header("HUD Image References")]
     public Image energyImage;
@@ -36,7 +32,6 @@ public class EHCManager : MonoBehaviour
         UpdateSprites();
     }
 
-    // Call this from DialogueScreenManager when a choice is made
     public void ApplyEffect(EHCEffect effect)
     {
         energy     = Mathf.Clamp(energy     + effect.energyDelta,     0, 100);
@@ -52,16 +47,9 @@ public class EHCManager : MonoBehaviour
         if (connectionImage) connectionImage.sprite = GetSprite(connection, connectionSprites);
     }
 
-    // Maps a 0-100 value to one of 5 sprite slots
     Sprite GetSprite(int value, Sprite[] sprites)
     {
         if (sprites == null || sprites.Length == 0) return null;
-
-        // 100-81 = index 0 (full)
-        // 80-61  = index 1
-        // 60-41  = index 2
-        // 40-21  = index 3
-        // 20-0   = index 4 (empty)
         int index = Mathf.Clamp(4 - (value / 21), 0, sprites.Length - 1);
         return sprites[index];
     }

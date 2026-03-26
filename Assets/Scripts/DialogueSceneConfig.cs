@@ -25,4 +25,8 @@ public class DialogueSceneConfig : ScriptableObject
     [Tooltip("Short line shown on repeat visits instead of the full conversation")]
     [TextArea(2, 3)]
     public string repeatLine = "Hey again!";
+
+    [Header("Display Options")]
+    [Tooltip("Hides the NPC sprite — use for internal monologue or choice moments with no character")]
+    public bool hideNPCSprite = false;
 }

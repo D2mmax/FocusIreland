@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9343a4c8fe53bca4d87f54174ef4eab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EHCManager
-  energy: 100
-  hope: 100
-  connection: 100
+  energy: 20
+  hope: 20
+  connection: 20
   energyImage: {fileID: 0}
   hopeImage: {fileID: 0}
   connectionImage: {fileID: 0}

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: DSC_School_MsWalsh
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
   npcName: Ms. Walsh
-  npcSprite: {fileID: 1644883130, guid: 2f73fc67b1be9424c813d8ca79314077, type: 3}
-  playerSprite: {fileID: 2011927712, guid: 3e57e36d3ff2bd94b8467b56145ed1da, type: 3}
-  backgroundSprite: {fileID: 0}
-  repeatLine: Don't forget that homework! And remember my door is always open.
+  npcSprite: {fileID: 822728390, guid: d73b905af7f3f334186f056aab98381d, type: 3}
+  playerSprite: {fileID: -596876504, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: ca309a99c5ea8ef4bb25f49ced71af2a, type: 3}
+  repeatLine: Keep going, you are doing great.
+  hideNPCSprite: 0

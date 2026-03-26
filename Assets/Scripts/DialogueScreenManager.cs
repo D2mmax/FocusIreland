@@ -32,6 +32,9 @@ public class DialogueScreenManager : MonoBehaviour
     private DialogueTree currentTree;
     private DialogueNode currentNode;
 
+    // Optional callback fired when dialogue ends — used by NPCInteraction for scene loads
+    private System.Action onDialogueEndCallback;
+
     // Prevents E key from closing immediately after opening
     private float inputCooldown = 0f;
     private const float COOLDOWN_DURATION = 0.2f;
@@ -68,14 +71,16 @@ public class DialogueScreenManager : MonoBehaviour
         ShowScreen();
     }
 
-    public void StartDialogue(DialogueSceneConfig config, DialogueTree tree)
+    public void StartDialogue(DialogueSceneConfig config, DialogueTree tree, System.Action onEnd = null)
     {
+        onDialogueEndCallback = onEnd;
         currentTree = tree;
 
         backgroundImage.sprite = config.backgroundSprite;
         npcImage.sprite        = config.npcSprite;
         playerImage.sprite     = config.playerSprite;
         npcNameText.text       = config.npcName;
+        npcImage.gameObject.SetActive(!config.hideNPCSprite);
 
         IsInDialogue = true;
         inputCooldown = COOLDOWN_DURATION;
@@ -139,7 +144,10 @@ public class DialogueScreenManager : MonoBehaviour
     void EndDialogue()
     {
         IsInDialogue = false;
+        npcImage.gameObject.SetActive(true);
         HideScreen();
+        onDialogueEndCallback?.Invoke();
+        onDialogueEndCallback = null;
     }
 
     void ShowScreen()

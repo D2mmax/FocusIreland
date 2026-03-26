@@ -10,6 +10,12 @@ public class NPCInteraction : MonoBehaviour
     [Header("Prompt (optional)")]
     public GameObject interactPrompt;
 
+    [Header("Scene Transition")]
+    [Tooltip("Tick this to automatically load a scene when the conversation ends")]
+    public bool loadSceneOnEnd = false;
+    [Tooltip("Exact name of the scene to load")]
+    public string sceneToLoad;
+
     private bool playerInRange = false;
     private bool hasSpoken = false;
     private float interactCooldown = 0f;
@@ -33,13 +39,21 @@ public class NPCInteraction : MonoBehaviour
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
+            if (DialogueScreenManager.Instance == null)
+            {
+                Debug.LogWarning("DialogueScreenManager not found in scene. Make sure the DialogueCanvas prefab is present.");
+                return;
+            }
             interactCooldown = COOLDOWN_DURATION;
             if (hasSpoken)
                 DialogueScreenManager.Instance.StartRepeatDialogue(sceneConfig);
             else
             {
                 hasSpoken = true;
-                DialogueScreenManager.Instance.StartDialogue(sceneConfig, dialogueTree);
+                System.Action onEnd = loadSceneOnEnd && !string.IsNullOrEmpty(sceneToLoad)
+                    ? () => UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad)
+                    : (System.Action)null;
+                DialogueScreenManager.Instance.StartDialogue(sceneConfig, dialogueTree, onEnd);
             }
         }
     }

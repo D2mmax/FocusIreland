@@ -169,6 +169,8 @@ MonoBehaviour:
   cardBack: {fileID: 0}
   score: 0
   scoreText: {fileID: 1440694703}
+  sceneToLoadOnComplete: StartScene
+  scoreToComplete: 10
   lockBoard: 0
 --- !u!1 &156298123
 GameObject:
@@ -386,8 +388,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.36, y: 2.43}
-    newSize: {x: 1.36, y: 2.43}
+    oldSize: {x: 1.36, y: 2.49}
+    newSize: {x: 1.36, y: 2.49}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -443,12 +445,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 43
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1182034905, guid: 3e57e36d3ff2bd94b8467b56145ed1da, type: 3}
+  m_Sprite: {fileID: -596876504, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.36, y: 2.43}
+  m_Size: {x: 1.36, y: 2.49}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

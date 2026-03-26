@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f73fc67b1be9424c813d8ca79314077
+guid: 85faf2ee4c7b86f45b8c751ff78166ee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC2States_0
+      name: Char3Sprites_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 19
-        width: 124
-        height: 240
+        x: 22
+        y: 17
+        width: 113
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4c992c4721ea404d9074dc0f0029683
-      internalID: 1644883130
+      spriteID: c909a3ae828583f4eb60f6231d1b13e1
+      internalID: -778826477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2States_1
+      name: Char3Sprites_1
       rect:
         serializedVersion: 2
-        x: 183
-        y: 19
-        width: 124
-        height: 240
+        x: 174
+        y: 17
+        width: 113
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3b125e5ec7ea064b89733b36bef81cd
-      internalID: 1995569389
+      spriteID: 02ad3b4e78a167c43a52c4f14390dd5a
+      internalID: 1441033164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC2States_2
+      name: Char3Sprites_2
       rect:
         serializedVersion: 2
-        x: 345
-        y: 19
-        width: 124
-        height: 240
+        x: 322
+        y: 17
+        width: 113
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +156,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3cac73ffb46306469d4f57bc200a9d7
-      internalID: -1838005452
+      spriteID: 00708541ec1509149ac2e86281da9f5f
+      internalID: 936693707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char3Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 17
+        width: 113
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8993cbb3aa5a58f4c990e1f8ce1a0eb3
+      internalID: -1920805358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char3Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 17
+        width: 113
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced0c3c2cd0ac5b4dadb669463d1fb2a
+      internalID: 1996366623
       vertices: []
       indices: 
       edges: []
@@ -166,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4904b677a2926fb4496cc0488d187408
+    spriteID: 230da0c3c2038cd4e99ab0e750768c64
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +222,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      NPC2States_0: 1644883130
-      NPC2States_1: 1995569389
-      NPC2States_2: -1838005452
+      Char3Sprites_0: -778826477
+      Char3Sprites_1: 1441033164
+      Char3Sprites_2: 936693707
+      Char3Sprites_3: -1920805358
+      Char3Sprites_4: 1996366623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: DSC_School_Marcus
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
   npcName: Marcus
-  npcSprite: {fileID: -1922187288, guid: 6befdd892fb230f4992b77419ee24ee1, type: 3}
-  playerSprite: {fileID: 2011927712, guid: 3e57e36d3ff2bd94b8467b56145ed1da, type: 3}
-  backgroundSprite: {fileID: 0}
+  npcSprite: {fileID: 1985536045, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  playerSprite: {fileID: -596876504, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: ca309a99c5ea8ef4bb25f49ced71af2a, type: 3}
   repeatLine: Hey, you doing alright?
+  hideNPCSprite: 0

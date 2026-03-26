@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Craig
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: Did you sleep okay? The snoring was bad last night. Once one person
+      starts, everyone joins in.
+    choices:
+    - choiceText: Yeah it kept me up all night
+      nextNodeID: kept_up
+      ehcEffect:
+        energyDelta: -20
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: I just put a pillow over my head
+      nextNodeID: pillow
+      ehcEffect:
+        energyDelta: -10
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: I'm kinda used to it by now
+      nextNodeID: used_to_it
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 15
+        connectionDelta: 10
+  - nodeID: kept_up
+    speaker: 0
+    dialogueText: Same. I've been here three weeks and I still can't sleep through
+      it. Hopefully tonight's quieter.
+    choices: []
+  - nodeID: pillow
+    speaker: 0
+    dialogueText: Ha. Yeah that's what I do too. Still doesn't really block it out
+      though does it.
+    choices: []
+  - nodeID: used_to_it
+    speaker: 0
+    dialogueText: Used to it? I don't know if that's impressive or sad. I'm Craig
+      by the way.
+    choices: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e57e36d3ff2bd94b8467b56145ed1da
+guid: bb927e7d937cd80449329da1f151a2cf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,30 +93,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterStates_0
+      name: Char1Sprites_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 10
         y: 17
-        width: 137
-        height: 243
+        width: 116
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f355dff2460090540b04696bd2127052
-      internalID: 1201168306
+      spriteID: 5f6bd0a15db38a84cad231705366d3dd
+      internalID: 1985536045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterStates_1
+      name: Char1Sprites_1
       rect:
         serializedVersion: 2
-        x: 185
+        x: 169
         y: 17
-        width: 136
-        height: 243
+        width: 116
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9adb16b8b5480f409e4c00380890cb7
-      internalID: -1182034905
+      spriteID: 862c8fe7dc3568f4baf2cb9168cf64f2
+      internalID: 1821274980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterStates_2
+      name: Char1Sprites_2
       rect:
         serializedVersion: 2
-        x: 352
-        y: 17
-        width: 135
-        height: 243
+        x: 324
+        y: 16
+        width: 116
+        height: 245
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +156,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce0dd7deb64d4124b89a91480824226d
-      internalID: 2011927712
+      spriteID: 8d3dbe2fa8145b441a3c09ed2d0cd1f9
+      internalID: -1934647235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char1Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 16
+        width: 116
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86921f9d3f4ee84b8efa1f6cabff31c
+      internalID: 876288933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Char1Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 16
+        width: 116
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb79087f121a0949a1e37723f848a29
+      internalID: 1318039224
       vertices: []
       indices: 
       edges: []
@@ -179,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 583f4e7cd8bfa1345a6b35d7bb4bb3af
+    spriteID: 2702a9d9e7ba4214ca131fdb6030d506
     internalID: 0
     vertices: []
     indices: 
@@ -191,9 +222,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      CharacterStates_0: 1201168306
-      CharacterStates_1: -1182034905
-      CharacterStates_2: 2011927712
+      Char1Sprites_0: 1985536045
+      Char1Sprites_1: 1821274980
+      Char1Sprites_2: -1934647235
+      Char1Sprites_3: 876288933
+      Char1Sprites_4: 1318039224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

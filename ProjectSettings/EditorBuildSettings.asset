@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SchoolScene.unity
     guid: f42f6b697cd3df143892b3f74a58f659
   - enabled: 1
+    path: Assets/Scenes/MiniGame.unity
+    guid: 092745ec68b03414e8c68c45c72fcccb
+  - enabled: 1
     path: Assets/Scenes/CityScene.unity
     guid: c373db3c308e9844ca3b56cf8b9937db
   - enabled: 1

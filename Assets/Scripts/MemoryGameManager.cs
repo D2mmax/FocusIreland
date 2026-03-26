@@ -1,7 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,19 +13,28 @@ public class GameManager : MonoBehaviour
     public Transform grid;
     public Sprite[] fruits;
     public Sprite cardBack;
-    [Header("Item_MiniGame")]
+
+    [Header("UI")]
     public int score = 0;
     public TextMeshProUGUI scoreText;
 
+    [Header("Scene Transition")]
+    [Tooltip("Scene to load when the player completes the minigame")]
+    public string sceneToLoadOnComplete = "SchoolScene";
+
+    [Tooltip("Score needed to complete the minigame. Set to 0 to disable score-based completion.")]
+    public int scoreToComplete = 0;
+
     private List<Card> flipped = new List<Card>();
     public bool lockBoard = false;
+
+    private int totalPairs;
+    private int matchedPairs;
 
     void Awake()
     {
         Instance = this;
     }
-
-
 
     void Start()
     {
@@ -35,6 +45,9 @@ public class GameManager : MonoBehaviour
             cards.Add(fruit);
             cards.Add(fruit);
         }
+
+        totalPairs = fruits.Length;
+        matchedPairs = 0;
 
         for (int i = 0; i < cards.Count; i++)
         {
@@ -65,7 +78,16 @@ public class GameManager : MonoBehaviour
         lockBoard = true;
         yield return new WaitForSeconds(0.7f);
 
-        if (flipped[0].frontSprite != flipped[1].frontSprite)
+        if (flipped[0].frontSprite == flipped[1].frontSprite)
+        {
+            matchedPairs++;
+            AddScore(10);
+            Debug.Log("Matched pairs: " + matchedPairs + " / " + totalPairs);
+
+            if (matchedPairs >= totalPairs)
+                StartCoroutine(CompleteGame());
+        }
+        else
         {
             flipped[0].Hide();
             flipped[1].Hide();
@@ -75,9 +97,19 @@ public class GameManager : MonoBehaviour
         lockBoard = false;
     }
 
+    IEnumerator CompleteGame()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneToLoadOnComplete);
+    }
+
     public void AddScore(int amount)
     {
         score += amount;
-        scoreText.text = "Score: " + score;
+        if (scoreText != null)
+            scoreText.text = "Score: " + score;
+
+        if (scoreToComplete > 0 && score >= scoreToComplete)
+            StartCoroutine(CompleteGame());
     }
 }
