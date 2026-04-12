@@ -3,7 +3,22 @@ guid: db6def4f9b9f0314096faa3b6f547777
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorFrame
+    second: {fileID: 2100000, guid: cfd4c1e5dc9f41447b47adcf70b16769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorMat
+    second: {fileID: 2100000, guid: e1251bfe6a40c1645a5b64c0cf9cbe54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorOverHang
+    second: {fileID: 2100000, guid: 09344720db4268342bf6697c664d7dfa, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

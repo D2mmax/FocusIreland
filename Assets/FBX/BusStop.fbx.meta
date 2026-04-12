@@ -3,7 +3,32 @@ guid: 3446310114ef4fc498755b8dd26f6a9a
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench
+    second: {fileID: 2100000, guid: b787f63da58a9a84fbf57d5c8f2eb50b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BusStopBack
+    second: {fileID: 2100000, guid: d6e725a69e93bc846bb61928b296cb7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BusStopPole
+    second: {fileID: 2100000, guid: 64ecc1c136e920047be3078c5d4b9b7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BusStopRoof
+    second: {fileID: 2100000, guid: abb193fbb0549fa4091e96bedf6f4dd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BusStopTimetable
+    second: {fileID: 2100000, guid: 3c70d9cf9384c8241826138743f9566b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
