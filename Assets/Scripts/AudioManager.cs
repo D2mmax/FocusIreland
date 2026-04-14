@@ -1,34 +1,38 @@
 using UnityEngine;
-using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
     [Header("Audio Sources")]
-    private AudioSource musicSource;
-    private AudioSource sfxSource;
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
 
-    [Header("Audio Library")]
-    public Sound[] sounds;
+    [Header("Hover SFX")]
+    public AudioClip[] hoverClips;
 
-    private Dictionary<string, AudioClip> soundDictionary;
+    int lastHoverIndex = -1;
 
-    [System.Serializable]
-    public class Sound
-    {
-        public string name;
-        public AudioClip clip;
-    }
+    [Header("Panel SFX")]
+    public AudioClip panelCloseSFX;
+    public AudioClip panelOpenSFX;
+
+    [Header("CollectSFX")]
+    public AudioClip[] collectSFXs;
+
+    [Header("Scene Transition SFX")]
+    public AudioClip sceneTransitionSFX;
+
+    [Header("Music Clips")]
+    public AudioClip mainMenuMusic;
 
     void Awake()
     {
-        // Singleton pattern
+        // Singleton setup
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            Setup();
         }
         else
         {
@@ -36,66 +40,86 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Setup()
+    public void Start()
     {
-        // Create audio sources
-        musicSource = gameObject.AddComponent<AudioSource>();
-        sfxSource = gameObject.AddComponent<AudioSource>();
-
-        musicSource.loop = true;
-
-        // Build dictionary for fast lookup
-        soundDictionary = new Dictionary<string, AudioClip>();
-
-        foreach (Sound sound in sounds)
-        {
-            if (!soundDictionary.ContainsKey(sound.name))
-            {
-                soundDictionary.Add(sound.name, sound.clip);
-            }
-        }
+        PlayMusic(mainMenuMusic);
     }
 
-    //  Play Background Music
-    public void PlayMusic(string name)
+    // --- SFX ---
+    public void PlaySFX(AudioClip clip)
     {
-        if (!soundDictionary.ContainsKey(name))
-        {
-            Debug.LogWarning("Music not found: " + name);
-            return;
-        }
+        sfxSource.PlayOneShot(clip);
+    }
 
-        musicSource.clip = soundDictionary[name];
+    // --- Random Hover ---
+    public void PlayRandomHover()
+    {
+        if (hoverClips.Length == 0) return;
+
+        int index;
+
+        // Prevent same sound twice in a row
+        do
+        {
+            index = Random.Range(0, hoverClips.Length);
+        }
+        while (index == lastHoverIndex && hoverClips.Length > 1);
+
+        lastHoverIndex = index;
+
+        sfxSource.pitch = Random.Range(0.95f, 1.05f);
+        sfxSource.PlayOneShot(hoverClips[index]);
+        sfxSource.pitch = 1f;
+    }
+
+    // --- Panel SFX ---
+    public void PlayPanelClose()
+    {
+        sfxSource.PlayOneShot(panelCloseSFX);
+    }
+
+    public void PlayPanelOpen()
+    {
+        sfxSource.PlayOneShot(panelOpenSFX);
+    }
+
+    // --- Music ---
+    public void PlayMusic(AudioClip music, bool loop = true)
+    {
+        musicSource.clip = music;
+        musicSource.loop = loop;
         musicSource.Play();
     }
 
-    //  Stop Music
-    public void StopMusic()
+    // --- Collect SFX ---
+    // Plays a random collect SFX from the array and applies a random pitch variation and prevents the same sound from playing twice in a row.
+    public void PlayRandomCollectSFX()
     {
-        musicSource.Stop();
+        if (collectSFXs.Length == 0) return;
+
+        int index;
+
+        // Prevent same sound twice in a row
+        do
+        {
+            index = Random.Range(0, collectSFXs.Length);
+        }
+        while (index == lastHoverIndex && collectSFXs.Length > 1);
+
+        lastHoverIndex = index;
+
+        sfxSource.pitch = Random.Range(0.9f, 1.1f);
+        sfxSource.PlayOneShot(collectSFXs[index]);
+        sfxSource.pitch = 1f;
+        sfxSource.Play();
+    }
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = volume;
     }
 
-    //  Play SFX
-    public void PlaySFX(string name)
+    public void SetSFXVolume(float volume)
     {
-        if (!soundDictionary.ContainsKey(name))
-        {
-            Debug.LogWarning("SFX not found: " + name);
-            return;
-        }
-
-        sfxSource.PlayOneShot(soundDictionary[name]);
-    }
-
-    //  Play SFX with volume control
-    public void PlaySFX(string name, float volume)
-    {
-        if (!soundDictionary.ContainsKey(name))
-        {
-            Debug.LogWarning("SFX not found: " + name);
-            return;
-        }
-
-        sfxSource.PlayOneShot(soundDictionary[name], volume);
+        sfxSource.volume = volume;
     }
 }
