@@ -3,7 +3,17 @@ guid: 25ab757e99346404abb2c5cee57c104a
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutsideYardWall
+    second: {fileID: 2100000, guid: 078da97cb13c2614f8c6980463ed508c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShelterWalls
+    second: {fileID: 2100000, guid: fa5d12181b839f845b48d7f49fe2532d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
