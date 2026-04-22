@@ -356,7 +356,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 387d4327aeb753440a0ba8638c70c7cf, type: 3}
   - {fileID: 21300000, guid: 344019ac738484747bdc8e8fa1cf955f, type: 3}
   - {fileID: 21300000, guid: 24381555fe807304d85a0c3293f88814, type: 3}
-  - {fileID: 21300000, guid: 387d4327aeb753440a0ba8638c70c7cf, type: 3}
+  - {fileID: 21300000, guid: 358aba7d7897123479dee129068f3fb9, type: 3}
   - {fileID: 21300000, guid: bdef00b23a77a1549b67654ac3c8b66e, type: 3}
   - {fileID: 21300000, guid: f4307557036f2cb45b9127f746589489, type: 3}
   cardBack: {fileID: 21300000, guid: f86ba32f2ab4d0449a62a3a4de13a034, type: 3}
