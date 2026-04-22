@@ -179,9 +179,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -253,9 +261,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -279,7 +295,7 @@ GameObject:
   - component: {fileID: 14557295}
   - component: {fileID: 14557294}
   - component: {fileID: 14557293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,6 +468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -529,6 +549,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -608,6 +632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -686,6 +714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -705,7 +737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 88223710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Furniture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,8 +753,8 @@ Transform:
   m_GameObject: {fileID: 88223709}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.99998325, z: -0, w: 0.005803077}
-  m_LocalPosition: {x: -9.157521, y: 2.4799998, z: -32.30666}
-  m_LocalScale: {x: 30, y: 5, z: 0.29999998}
+  m_LocalPosition: {x: -6.4189405, y: 2.4799998, z: -16.385248}
+  m_LocalScale: {x: 30, y: 5, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 395221149}
@@ -825,7 +857,7 @@ Transform:
   - {fileID: 1078026137}
   - {fileID: 1383712076}
   - {fileID: 26290322}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1675907936}
   m_LocalEulerAnglesHint: {x: 0, y: -179.335, z: 0}
 --- !u!1001 &105336728
 PrefabInstance:
@@ -894,6 +926,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -973,6 +1009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1050,6 +1090,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1134,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1204,9 +1252,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1286,6 +1342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1308,7 +1368,7 @@ GameObject:
   - component: {fileID: 142821223}
   - component: {fileID: 142821222}
   - component: {fileID: 142821221}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,6 +1536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1553,6 +1617,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1632,6 +1700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1709,6 +1781,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1788,6 +1864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1866,6 +1946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1888,7 +1972,7 @@ GameObject:
   - component: {fileID: 383758864}
   - component: {fileID: 383758863}
   - component: {fileID: 383758862}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2000,7 +2084,7 @@ GameObject:
   - component: {fileID: 385612790}
   - component: {fileID: 385612789}
   - component: {fileID: 385612788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2160,9 +2244,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2173,72 +2265,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
   m_PrefabInstance: {fileID: 395221148}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &406193789
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.905722
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407962597421391623, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_Name
-      value: Player 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2407962597421391623, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
---- !u!4 &406193790 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 510120001497877402, guid: 9fcb84c1654b8f7479fa6ed1987a64b8, type: 3}
-  m_PrefabInstance: {fileID: 406193789}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &428341238
 PrefabInstance:
@@ -2308,6 +2334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2318,179 +2348,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
   m_PrefabInstance: {fileID: 428341238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &451656024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 451656027}
-  - component: {fileID: 451656026}
-  - component: {fileID: 451656025}
-  - component: {fileID: 451656028}
-  - component: {fileID: 451656029}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &451656025
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451656024}
-  m_Enabled: 1
---- !u!20 &451656026
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451656024}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60.000004
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &451656027
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451656024}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.22527502, y: -0.76681453, z: 0.35757145, w: 0.4831039}
-  m_LocalPosition: {x: 9.676973, y: 12.240665, z: -13.743123}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1660531759}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &451656028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451656024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineBrain
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &451656029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 451656024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!1001 &464310437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2558,6 +2415,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2637,6 +2498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2714,6 +2579,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2793,6 +2662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2871,6 +2744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2941,9 +2818,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2955,6 +2840,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
   m_PrefabInstance: {fileID: 532000677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &569960700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42562085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476687611147909888, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_Name
+      value: Player 1 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
 --- !u!1001 &572242445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3023,6 +2965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3045,7 +2991,7 @@ GameObject:
   - component: {fileID: 584029569}
   - component: {fileID: 584029568}
   - component: {fileID: 584029567}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3214,6 +3160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3284,9 +3234,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3298,122 +3256,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
   m_PrefabInstance: {fileID: 727875304}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &743005067
-GameObject:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 743005068}
-  - component: {fileID: 743005071}
-  - component: {fileID: 743005070}
-  - component: {fileID: 743005069}
-  m_Layer: 0
-  m_Name: cm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &743005068
-Transform:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743005067}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1660531759}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &743005069
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743005067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineFramingTransposer
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
-  m_LookaheadIgnoreY: 0
-  m_XDamping: 0.1
-  m_YDamping: 0.1
-  m_ZDamping: 0.1
-  m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_CameraDistance: 15
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
-  m_GroupFramingMode: 2
-  m_AdjustmentMode: 0
-  m_GroupFramingSize: 0.8
-  m_MaxDollyIn: 5000
-  m_MaxDollyOut: 5000
-  m_MinimumDistance: 1
-  m_MaximumDistance: 5000
-  m_MinimumFOV: 3
-  m_MaximumFOV: 60
-  m_MinimumOrthoSize: 1
-  m_MaximumOrthoSize: 5000
---- !u!114 &743005070
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743005067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineComposer
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 0
-  m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
---- !u!114 &743005071
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743005067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachinePipeline
 --- !u!1001 &760384282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3482,6 +3324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3504,7 +3350,7 @@ GameObject:
   - component: {fileID: 764644215}
   - component: {fileID: 764644214}
   - component: {fileID: 764644213}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3672,6 +3518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3750,6 +3600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3772,7 +3626,7 @@ GameObject:
   - component: {fileID: 824694042}
   - component: {fileID: 824694041}
   - component: {fileID: 824694040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3940,6 +3794,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4017,6 +3875,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4096,6 +3958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4173,6 +4039,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4252,6 +4122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4329,6 +4203,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4408,6 +4286,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4486,6 +4368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4556,9 +4442,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4638,6 +4532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4715,6 +4613,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4794,6 +4696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4871,6 +4777,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4950,6 +4860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5027,6 +4941,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5106,6 +5024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5128,7 +5050,7 @@ GameObject:
   - component: {fileID: 989403481}
   - component: {fileID: 989403480}
   - component: {fileID: 989403479}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5296,6 +5218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5373,6 +5299,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5452,6 +5382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5529,6 +5463,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5665,6 +5603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5735,9 +5677,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5817,6 +5767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5895,6 +5849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5970,9 +5928,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 19c01d298ce2f1249bbab41f20043c36, type: 2}
+    - target: {fileID: -516098083770646512, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
       propertyPath: m_Name
       value: Chalkboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -6042,9 +6024,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6124,6 +6114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6201,6 +6195,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6280,6 +6278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6358,6 +6360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6428,9 +6434,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6607,6 +6621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6684,6 +6702,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6763,6 +6785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6841,6 +6867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6911,9 +6941,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 19c01d298ce2f1249bbab41f20043c36, type: 2}
+    - target: {fileID: -516098083770646512, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
       propertyPath: m_Name
       value: Chalkboard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -6991,6 +7045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7013,7 +7071,7 @@ GameObject:
   - component: {fileID: 1299766480}
   - component: {fileID: 1299766479}
   - component: {fileID: 1299766478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7181,6 +7239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7258,6 +7320,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7342,6 +7408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7419,6 +7489,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7498,6 +7572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7517,7 +7595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412528425}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7533,7 +7611,7 @@ Transform:
   m_GameObject: {fileID: 1412528424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70299125, z: -0, w: 0.7111985}
-  m_LocalPosition: {x: -2.7385807, y: 0, z: -15.9214115}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7550,7 +7628,7 @@ Transform:
   - {fileID: 1506815217}
   - {fileID: 989403482}
   - {fileID: 142821224}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1675907936}
   m_LocalEulerAnglesHint: {x: 0, y: -89.335, z: 0}
 --- !u!1001 &1415105569
 PrefabInstance:
@@ -7620,6 +7698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7630,6 +7712,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
   m_PrefabInstance: {fileID: 1415105569}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1433951224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982781398583572785, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456270668381442899, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa1d0698c47ee1042aac93ebac305ebe, type: 3}
 --- !u!1001 &1448909680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7690,9 +7869,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 19c01d298ce2f1249bbab41f20043c36, type: 2}
+    - target: {fileID: -516098083770646512, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
       propertyPath: m_Name
       value: Chalkboard (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -7769,6 +7972,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7848,6 +8055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7926,6 +8137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7948,7 +8163,7 @@ GameObject:
   - component: {fileID: 1506815216}
   - component: {fileID: 1506815215}
   - component: {fileID: 1506815214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8116,6 +8331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8193,6 +8412,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8272,6 +8495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8294,7 +8521,7 @@ GameObject:
   - component: {fileID: 1599216228}
   - component: {fileID: 1599216227}
   - component: {fileID: 1599216226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8454,9 +8681,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8468,7 +8703,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
   m_PrefabInstance: {fileID: 1645037512}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1660531757
+--- !u!1 &1675907935
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8476,70 +8711,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1660531759}
-  - component: {fileID: 1660531758}
-  m_Layer: 0
-  m_Name: IndoorCam
+  - component: {fileID: 1675907936}
+  m_Layer: 6
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1660531758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660531757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineVirtualCamera
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 406193790}
-  m_Lens:
-    FieldOfView: 60.000004
-    OrthographicSize: 5
-    NearClipPlane: 0.3
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    LensShift: {x: 0, y: 0}
-    GateFit: 2
-    FocusDistance: 10
-    m_SensorSize: {x: 1, y: 1}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 743005068}
---- !u!4 &1660531759
+--- !u!4 &1675907936
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660531757}
+  m_GameObject: {fileID: 1675907935}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7385807, y: 0, z: -15.9214115}
+  m_LocalScale: {x: 1.3485, y: 1.3485, z: 1.3485}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 743005068}
-  m_Father: {fileID: 451656027}
-  m_LocalEulerAnglesHint: {x: 50, y: -115.577, z: 0}
+  - {fileID: 88223710}
+  - {fileID: 1412528425}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705546469
 GameObject:
   m_ObjectHideFlags: 0
@@ -8687,6 +8883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8764,6 +8964,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8900,6 +9104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8977,6 +9185,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9056,6 +9268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9133,6 +9349,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9212,6 +9432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9289,6 +9513,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9368,6 +9596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9438,9 +9670,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 19c01d298ce2f1249bbab41f20043c36, type: 2}
+    - target: {fileID: -516098083770646512, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
       propertyPath: m_Name
       value: Chalkboard (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: 0e80649cf77239d44b1c445c00f82cb6, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -9517,6 +9773,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9596,6 +9856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9618,7 +9882,7 @@ GameObject:
   - component: {fileID: 1979477362}
   - component: {fileID: 1979477361}
   - component: {fileID: 1979477360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9786,6 +10050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9863,6 +10131,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
       propertyPath: m_Name
       value: tables (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9942,6 +10214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tables (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4a047ffe61d882c43a9cda2acd808ea5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10020,6 +10296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chairs (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10090,9 +10370,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10116,7 +10404,7 @@ GameObject:
   - component: {fileID: 2120829356}
   - component: {fileID: 2120829355}
   - component: {fileID: 2120829354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10220,11 +10508,10 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 451656027}
-  - {fileID: 88223710}
-  - {fileID: 1412528425}
-  - {fileID: 406193789}
+  - {fileID: 1433951224}
+  - {fileID: 1675907936}
   - {fileID: 1705546472}
   - {fileID: 1773335358}
   - {fileID: 1022546981}
   - {fileID: 1188335296}
+  - {fileID: 569960700}
