@@ -444,6 +444,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (14)
@@ -1854,6 +1858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (15)
@@ -2292,6 +2300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (23)
@@ -2617,6 +2629,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (20)
@@ -3648,6 +3664,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (27)
@@ -3722,6 +3742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (22)
@@ -4220,6 +4244,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (18)
@@ -4450,6 +4478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (16)
@@ -4598,6 +4630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (29)
@@ -5252,6 +5288,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (21)
@@ -6154,6 +6194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (19)
@@ -6306,6 +6350,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (13)
@@ -6551,6 +6599,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (12)
@@ -6703,6 +6755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (28)
@@ -9148,6 +9204,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b8bc86a2a79d2864eb5c1553c11ecbb7, type: 2}
     - target: {fileID: 919132149155446097, guid: 97e89321b003ec24aaeb596f76e10d8a, type: 3}
       propertyPath: m_Name
       value: chairs (17)
