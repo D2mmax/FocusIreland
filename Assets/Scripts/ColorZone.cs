@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ColorBucket : MonoBehaviour
 {
@@ -6,6 +6,8 @@ public class ColorBucket : MonoBehaviour
 
     public AudioClip correctSound;
     public AudioClip wrongSound;
+
+    public GameObject confettiPrefab; // NOTE: GameObject now
 
     private AudioSource audioSource;
 
@@ -23,7 +25,20 @@ public class ColorBucket : MonoBehaviour
             if (crayon.colorType == bucketColor)
             {
                 audioSource.PlayOneShot(correctSound);
-                Destroy(other.gameObject);
+
+                // 🔥 SPAWN CONFETTI
+                if (confettiPrefab != null)
+                {
+                    GameObject confetti = Instantiate(
+                        confettiPrefab,
+                        transform.position,
+                        Quaternion.identity
+                    );
+
+                    Destroy(confetti, 2f); // clean up after playing
+                }
+
+                Destroy(other.gameObject, 0.1f);
             }
             else
             {
