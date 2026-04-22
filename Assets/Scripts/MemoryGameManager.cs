@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -18,11 +18,14 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public TextMeshProUGUI scoreText;
 
-    [Header("Scene Transition")]
-    [Tooltip("Scene to load when the player completes the minigame")]
-    public string sceneToLoadOnComplete = "SchoolScene";
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip flipSound;
+    public AudioClip matchSound;
+    public AudioClip wrongSound;
 
-    [Tooltip("Score needed to complete the minigame. Set to 0 to disable score-based completion.")]
+    [Header("Scene Transition")]
+    public string sceneToLoadOnComplete = "SchoolScene";
     public int scoreToComplete = 0;
 
     private List<Card> flipped = new List<Card>();
@@ -69,6 +72,10 @@ public class GameManager : MonoBehaviour
     {
         flipped.Add(card);
 
+        // 🔊 Flip sound
+        if (audioSource != null && flipSound != null)
+            audioSource.PlayOneShot(flipSound);
+
         if (flipped.Count == 2)
             StartCoroutine(CheckMatch());
     }
@@ -82,13 +89,20 @@ public class GameManager : MonoBehaviour
         {
             matchedPairs++;
             AddScore(10);
-            Debug.Log("Matched pairs: " + matchedPairs + " / " + totalPairs);
+
+            // 🔊 Match sound
+            if (audioSource != null && matchSound != null)
+                audioSource.PlayOneShot(matchSound);
 
             if (matchedPairs >= totalPairs)
                 StartCoroutine(CompleteGame());
         }
         else
         {
+            // 🔊 Wrong sound
+            if (audioSource != null && wrongSound != null)
+                audioSource.PlayOneShot(wrongSound);
+
             flipped[0].Hide();
             flipped[1].Hide();
         }
@@ -106,6 +120,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
+
         if (scoreText != null)
             scoreText.text = "Score: " + score;
 
