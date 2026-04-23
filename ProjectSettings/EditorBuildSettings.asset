@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ItemDrop_Mini-Game.unity
     guid: 5b8c8062ce9ec9d4082561bf800fd3b7
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 18f9a9b07bc30f8418fb2b3fd73262f5
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6b8e30bef0cfa6b46b47c95b5a24d2c2, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -11,6 +11,9 @@ public class Billboard : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.rotation = mainCam.transform.rotation;
+        if (mainCam == null) return;
+
+        // Only copy Y rotation so the sprite stays upright and centred
+        transform.rotation = Quaternion.Euler(0f, mainCam.transform.eulerAngles.y, 0f);
     }
 }
