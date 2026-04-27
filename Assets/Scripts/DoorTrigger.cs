@@ -35,10 +35,13 @@ public class DoorTrigger : MonoBehaviour
         if (!playerInRange) return;
         if (DialogueScreenManager.Instance != null && DialogueScreenManager.Instance.IsInDialogue) return;
 
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
         {
             interactCooldown = COOLDOWN_DURATION;
-            SceneManager.LoadScene(targetScene);
+            if (SceneFader.Instance != null)
+                SceneFader.Instance.FadeTo(targetScene);
+            else
+                SceneManager.LoadScene(targetScene);
         }
     }
 
