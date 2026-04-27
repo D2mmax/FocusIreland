@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
   npcName: Pat
   npcSprite: {fileID: 0}
+  dynamicNPCSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerSprite: {fileID: 0}
   backgroundSprite: {fileID: 0}
   repeatLine: Mornin'.
-  hideNPCSprite: 0
-  hidePlayerSprite: 0
-  hideBackground: 0
+  hideNPCSprite: 1
+  hidePlayerSprite: 1
+  hideBackground: 1
