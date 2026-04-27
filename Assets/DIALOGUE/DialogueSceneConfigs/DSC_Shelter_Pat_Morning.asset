@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9110263bbb4dc9f46a3f7f909b4ddabf, type: 3}
-  m_Name: DSC_School_MsWalsh
+  m_Name: DSC_Shelter_Pat_Morning
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
-  npcName: Ms. Walsh
-  npcSprite: {fileID: 822728390, guid: d73b905af7f3f334186f056aab98381d, type: 3}
-  playerSprite: {fileID: -596876504, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
-  backgroundSprite: {fileID: 21300000, guid: ca309a99c5ea8ef4bb25f49ced71af2a, type: 3}
-  repeatLine: Keep going, you are doing great.
+  npcName: Pat
+  npcSprite: {fileID: 0}
+  playerSprite: {fileID: 0}
+  backgroundSprite: {fileID: 0}
+  repeatLine: Mornin'.
   hideNPCSprite: 0
+  hidePlayerSprite: 0
+  hideBackground: 0

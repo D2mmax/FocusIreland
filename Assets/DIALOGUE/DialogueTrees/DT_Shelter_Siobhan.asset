@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Siobhan
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: Did you sleep okay?
+    continueNodeID:
+    choices:
+    - choiceText: Yeah, fine.
+      nextNodeID: closing_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: Not really.
+      nextNodeID: not_really
+      ehcEffect:
+        energyDelta: 1
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: (Say nothing. Sit down and eat the toast.)
+      nextNodeID: closing_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: not_really
+    speaker: 0
+    dialogueText: Me neither.
+    continueNodeID: not_really_2
+    choices: []
+  - nodeID: not_really_2
+    speaker: 0
+    dialogueText: It'll get easier. The noise takes a while to tune out.
+    continueNodeID: closing_1
+    choices: []
+  - nodeID: closing_1
+    speaker: 0
+    dialogueText: I'll be home by six. There's money in the front pocket of your
+      bag if you want something at lunch.
+    continueNodeID: closing_2
+    choices: []
+  - nodeID: closing_2
+    speaker: 0
+    dialogueText: And Ciaran. Just - try today, yeah?
+    continueNodeID:
+    choices: []

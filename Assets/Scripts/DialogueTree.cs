@@ -47,8 +47,11 @@ public class DialogueNode
     [Tooltip("The dialogue line shown on screen")]
     public string dialogueText;
 
-    [Tooltip("Choices the player can pick after this line. If empty, conversation ends.")]
+    [Tooltip("Choices the player can pick after this line. If empty, conversation ends or continues to continueNodeID.")]
     public List<DialogueChoice> choices = new List<DialogueChoice>();
+
+    [Tooltip("If set and choices is empty, shows a Continue button that advances to this node instead of ending.")]
+    public string continueNodeID;
 }
 
 // ---------------------------------------------------------------------------

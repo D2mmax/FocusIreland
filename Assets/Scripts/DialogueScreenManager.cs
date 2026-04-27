@@ -109,8 +109,25 @@ public class DialogueScreenManager : MonoBehaviour
 
         if (!hasChoices)
         {
-            // Show close/continue button
-            if (closeButton != null) closeButton.gameObject.SetActive(true);
+            if (closeButton != null)
+            {
+                closeButton.gameObject.SetActive(true);
+                closeButton.onClick.RemoveAllListeners();
+
+                bool hasContinue = !string.IsNullOrEmpty(node.continueNodeID);
+                var label = closeButton.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+
+                if (hasContinue)
+                {
+                    if (label != null) label.text = "Continue";
+                    closeButton.onClick.AddListener(() => ShowNode(currentTree.GetNode(currentNode.continueNodeID)));
+                }
+                else
+                {
+                    if (label != null) label.text = "End Conversation";
+                    closeButton.onClick.AddListener(EndDialogue);
+                }
+            }
             return;
         }
 
