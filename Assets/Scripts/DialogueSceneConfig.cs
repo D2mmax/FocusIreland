@@ -11,8 +11,12 @@ public class DialogueSceneConfig : ScriptableObject
     [Tooltip("Name displayed above the NPC's dialogue text")]
     public string npcName;
 
-    [Tooltip("The NPC's portrait sprite shown on the right side")]
+    [Tooltip("The NPC's default portrait sprite (used if the array is empty)")]
     public Sprite npcSprite;
+
+    [Header("Dynamic NPC Portraits (index 0 = high connection, index 4 = low)")]
+    [Tooltip("Leave empty to just use the default npcSprite above.")]
+    public Sprite[] dynamicNPCSprites = new Sprite[5];
 
     [Tooltip("The player character's portrait sprite shown on the left side")]
     public Sprite playerSprite;
@@ -35,4 +39,29 @@ public class DialogueSceneConfig : ScriptableObject
 
     [Tooltip("Hides the background image")]
     public bool hideBackground = false;
+
+    /// <summary>
+    /// Returns the dynamically calculated NPC sprite based on the current connection value.
+    /// Uses the default npcSprite if the dynamic array hasn't been set up.
+    /// </summary>
+    public Sprite GetCurrentNPCSprite()
+    {
+        if (dynamicNPCSprites == null || dynamicNPCSprites.Length == 0)
+        {
+            return npcSprite;
+        }
+
+        int connectionValue = 50; // Default fallback amount
+
+        if (EHCManager.Instance != null)
+        {
+            connectionValue = EHCManager.Instance.connection;
+        }
+
+        // Same mathematical logic as FaceChecker & EHCManager
+        int index = Mathf.Clamp(4 - (connectionValue / 21), 0, dynamicNPCSprites.Length - 1);
+        
+        // Safety check to ensure the slot isn't unexpectedly empty
+        return dynamicNPCSprites[index] != null ? dynamicNPCSprites[index] : npcSprite;
+    }
 }
