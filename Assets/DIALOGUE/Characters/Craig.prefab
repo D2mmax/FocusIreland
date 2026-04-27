@@ -141,11 +141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FaceChecker
   faceSprites:
-  - {fileID: -367469425, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
-  - {fileID: 2132163187, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
-  - {fileID: -302233259, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
-  - {fileID: 1389949857, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
-  - {fileID: 453003574, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: -1900200110, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 742768872, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 581078239, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 450500120, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 622854326, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
 --- !u!1001 &2749118980624663612
 PrefabInstance:
   m_ObjectHideFlags: 0
