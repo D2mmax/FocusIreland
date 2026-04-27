@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 8600467839703393878}
   - component: {fileID: 2063575191272511531}
   - component: {fileID: 2530585565305467786}
-  - component: {fileID: 8877562900209775905}
   - component: {fileID: 8281843138509043328}
   m_Layer: 0
-  m_Name: Ms. Walsh
+  m_Name: Lily
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 822728390, guid: d73b905af7f3f334186f056aab98381d, type: 3}
+  m_Sprite: {fileID: -778826477, guid: 85faf2ee4c7b86f45b8c751ff78166ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,23 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eacdf72e55bb044c81c445e6b6842e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Billboard
---- !u!114 &8877562900209775905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7522268925029146301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31c80526139ca6b40b1408e865631540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
-  sceneConfig: {fileID: 11400000, guid: 24ce081dc32d44447939a2c25238c5a1, type: 2}
-  dialogueTree: {fileID: 11400000, guid: 8d198bb13b2291a4a8cf1c48b71d429c, type: 2}
-  interactPrompt: {fileID: 3389762672148906158}
-  loadSceneOnEnd: 1
-  sceneToLoad: MiniGame
 --- !u!65 &8281843138509043328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -202,11 +184,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee912ceb1223cbf4fad8281d343cb854, type: 3}
---- !u!1 &3389762672148906158 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2304336803122943109, guid: ee912ceb1223cbf4fad8281d343cb854, type: 3}
-  m_PrefabInstance: {fileID: 3526456144137557035}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3768267302384381492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 341127917642136095, guid: ee912ceb1223cbf4fad8281d343cb854, type: 3}

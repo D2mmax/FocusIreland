@@ -29,4 +29,10 @@ public class DialogueSceneConfig : ScriptableObject
     [Header("Display Options")]
     [Tooltip("Hides the NPC sprite — use for internal monologue or choice moments with no character")]
     public bool hideNPCSprite = false;
+
+    [Tooltip("Hides the player sprite")]
+    public bool hidePlayerSprite = false;
+
+    [Tooltip("Hides the background image")]
+    public bool hideBackground = false;
 }

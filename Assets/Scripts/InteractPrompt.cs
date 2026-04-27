@@ -10,6 +10,7 @@ public class InteractPrompt : MonoBehaviour
     [Header("Settings")]
     public string promptText = "Press E";
     public float heightOffset = 2.5f;
+    public int fontSize = 42;
 
     private Canvas canvas;
     private TextMeshProUGUI tmp;
@@ -33,7 +34,7 @@ public class InteractPrompt : MonoBehaviour
 
         tmp = textObj.AddComponent<TextMeshProUGUI>();
         tmp.text = promptText;
-        tmp.fontSize = 42;
+        tmp.fontSize = fontSize;
         tmp.alignment = TextAlignmentOptions.Center;
         tmp.color = new Color(1f, 0.92f, 0.016f);
 

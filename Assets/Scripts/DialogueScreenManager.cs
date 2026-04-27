@@ -63,6 +63,10 @@ public class DialogueScreenManager : MonoBehaviour
         npcNameText.text       = config.npcName;
         dialogueText.text      = config.repeatLine;
 
+        npcImage.gameObject.SetActive(!config.hideNPCSprite);
+        playerImage.gameObject.SetActive(!config.hidePlayerSprite);
+        backgroundImage.gameObject.SetActive(!config.hideBackground);
+
         foreach (var btn in choiceButtons) btn.gameObject.SetActive(false);
         if (closeButton != null) closeButton.gameObject.SetActive(true);
 
@@ -80,7 +84,10 @@ public class DialogueScreenManager : MonoBehaviour
         npcImage.sprite        = config.npcSprite;
         playerImage.sprite     = config.playerSprite;
         npcNameText.text       = config.npcName;
+
         npcImage.gameObject.SetActive(!config.hideNPCSprite);
+        playerImage.gameObject.SetActive(!config.hidePlayerSprite);
+        backgroundImage.gameObject.SetActive(!config.hideBackground);
 
         IsInDialogue = true;
         inputCooldown = COOLDOWN_DURATION;
@@ -145,6 +152,8 @@ public class DialogueScreenManager : MonoBehaviour
     {
         IsInDialogue = false;
         npcImage.gameObject.SetActive(true);
+        playerImage.gameObject.SetActive(true);
+        backgroundImage.gameObject.SetActive(true);
         HideScreen();
         onDialogueEndCallback?.Invoke();
         onDialogueEndCallback = null;
