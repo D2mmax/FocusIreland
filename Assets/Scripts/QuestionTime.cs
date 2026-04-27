@@ -7,22 +7,28 @@ public class QuestionFlow : MonoBehaviour
     public TextMeshProUGUI questionText;
     public TMP_InputField inputField;
 
-    private int currentNumber = 1;
-    private int maxNumber = 10;
-    private int multiplier = 10;
+    private int num1;
+    private int num2;
+
+    private int questionsAnswered = 0;
+    private int maxQuestions = 10;
 
     private bool waitingForNext = false;
 
     void Start()
     {
-        ShowQuestion();
+        GenerateQuestion();
         inputField.onEndEdit.AddListener(CheckAnswer);
     }
 
-    void ShowQuestion()
+    void GenerateQuestion()
     {
-        questionText.text = currentNumber + " x " + multiplier + " =";
-        questionText.color = Color.red;
+        num1 = Random.Range(1, 13); // 1–12
+        num2 = Random.Range(1, 13);
+
+        questionText.text = num1 + " + " + num2 + " =";
+        questionText.color = new Color32(255, 0, 0, 255); // red
+
         inputField.text = "";
         inputField.interactable = true;
         inputField.ActivateInputField();
@@ -34,10 +40,12 @@ public class QuestionFlow : MonoBehaviour
 
         if (int.TryParse(value, out int result))
         {
-            if (result == currentNumber * multiplier)
+            if (result == num1 + num2)
             {
-                questionText.color = Color.blue;
+                questionText.color = new Color32(0, 0, 255, 255); // blue
                 inputField.interactable = false;
+                questionsAnswered++;
+
                 StartCoroutine(NextQuestionDelay());
             }
         }
@@ -47,13 +55,11 @@ public class QuestionFlow : MonoBehaviour
     {
         waitingForNext = true;
 
-        yield return new WaitForSeconds(2f); // delay before next question
+        yield return new WaitForSeconds(2f);
 
-        currentNumber++;
-
-        if (currentNumber <= maxNumber)
+        if (questionsAnswered < maxQuestions)
         {
-            ShowQuestion();
+            GenerateQuestion();
             waitingForNext = false;
         }
         else
