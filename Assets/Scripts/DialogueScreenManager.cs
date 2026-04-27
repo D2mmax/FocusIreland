@@ -58,7 +58,7 @@ public class DialogueScreenManager : MonoBehaviour
     public void StartRepeatDialogue(DialogueSceneConfig config)
     {
         backgroundImage.sprite = config.backgroundSprite;
-        npcImage.sprite        = config.npcSprite;
+        npcImage.sprite        = config.GetCurrentNPCSprite(); // Updated to get dynamic sprite
         playerImage.sprite     = config.playerSprite;
         npcNameText.text       = config.npcName;
         dialogueText.text      = config.repeatLine;
@@ -81,7 +81,7 @@ public class DialogueScreenManager : MonoBehaviour
         currentTree = tree;
 
         backgroundImage.sprite = config.backgroundSprite;
-        npcImage.sprite        = config.npcSprite;
+        npcImage.sprite        = config.GetCurrentNPCSprite(); // Updated to get dynamic sprite
         playerImage.sprite     = config.playerSprite;
         npcNameText.text       = config.npcName;
 
