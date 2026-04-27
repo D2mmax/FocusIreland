@@ -4467,6 +4467,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000003, y: 0.037346452, z: 0.02209763}
   m_Center: {x: 0.0000000074487843, y: -0.0010993277, z: 0.001048815}
+--- !u!1 &991844892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5451743389746573027, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+  m_PrefabInstance: {fileID: 3663687775295259108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &1007649032 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 247143398024065116, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
@@ -6651,6 +6656,36 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.50927144, y: 0.91611564, z: 0.49956402}
   m_Center: {x: 0.02737753, y: 0.37805784, z: 0.00093311066}
+<<<<<<< Updated upstream
+=======
+--- !u!4 &1596699644 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3432941969723521092, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+  m_PrefabInstance: {fileID: 3663687775295259108}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1596699647
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991844892}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7bb1e757db385d4fb02f63ac4f344b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+>>>>>>> Stashed changes
 --- !u!1001 &1607778288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9407,7 +9442,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409569934317123425, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
       propertyPath: field of view
+<<<<<<< Updated upstream
       value: 35
+=======
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129121824923209694, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1596699647}
+    - target: {fileID: 7465749551556856591, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465749551556856591, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465749551556856591, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1234937669
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7476687611147909888, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
       propertyPath: m_Name
@@ -9415,8 +9470,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
+<<<<<<< Updated upstream
     m_AddedGameObjects: []
     m_AddedComponents: []
+=======
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3432941969723521092, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 882961923}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5451743389746573027, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1596699647}
+>>>>>>> Stashed changes
   m_SourcePrefab: {fileID: 100100000, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
 --- !u!1001 &3934114772955861696
 PrefabInstance:
