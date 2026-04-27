@@ -8,14 +8,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public AudioSource sfxSource;
 
-    [Header("Hover SFX")]
-    public AudioClip[] hoverClips;
-
-    int lastHoverIndex = -1;
-
-    [Header("Panel SFX")]
-    public AudioClip panelCloseSFX;
-    public AudioClip panelOpenSFX;
+    [Header("SFX")]
+    public AudioClip[] dialogueClips;
 
     [Header("CollectSFX")]
     public AudioClip[] collectSFXs;
@@ -25,6 +19,9 @@ public class AudioManager : MonoBehaviour
 
     [Header("Music Clips")]
     public AudioClip mainMenuMusic;
+    public AudioClip schoolSceneMusic;
+    public AudioClip outdoorSceneMusic;
+    public AudioClip shelterSceneMusic;
 
     void Awake()
     {
@@ -51,37 +48,6 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(clip);
     }
 
-    // --- Random Hover ---
-    public void PlayRandomHover()
-    {
-        if (hoverClips.Length == 0) return;
-
-        int index;
-
-        // Prevent same sound twice in a row
-        do
-        {
-            index = Random.Range(0, hoverClips.Length);
-        }
-        while (index == lastHoverIndex && hoverClips.Length > 1);
-
-        lastHoverIndex = index;
-
-        sfxSource.pitch = Random.Range(0.95f, 1.05f);
-        sfxSource.PlayOneShot(hoverClips[index]);
-        sfxSource.pitch = 1f;
-    }
-
-    // --- Panel SFX ---
-    public void PlayPanelClose()
-    {
-        sfxSource.PlayOneShot(panelCloseSFX);
-    }
-
-    public void PlayPanelOpen()
-    {
-        sfxSource.PlayOneShot(panelOpenSFX);
-    }
 
     // --- Music ---
     public void PlayMusic(AudioClip music, bool loop = true)
@@ -89,29 +55,6 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = music;
         musicSource.loop = loop;
         musicSource.Play();
-    }
-
-    // --- Collect SFX ---
-    // Plays a random collect SFX from the array and applies a random pitch variation and prevents the same sound from playing twice in a row.
-    public void PlayRandomCollectSFX()
-    {
-        if (collectSFXs.Length == 0) return;
-
-        int index;
-
-        // Prevent same sound twice in a row
-        do
-        {
-            index = Random.Range(0, collectSFXs.Length);
-        }
-        while (index == lastHoverIndex && collectSFXs.Length > 1);
-
-        lastHoverIndex = index;
-
-        sfxSource.pitch = Random.Range(0.9f, 1.1f);
-        sfxSource.PlayOneShot(collectSFXs[index]);
-        sfxSource.pitch = 1f;
-        sfxSource.Play();
     }
     public void SetMusicVolume(float volume)
     {
