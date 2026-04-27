@@ -16,8 +16,8 @@ MonoBehaviour:
   nodes:
   - nodeID: start
     speaker: 0
-    dialogueText: Hey! I've seen you around here before. I'm trying to catch as
-      many of these as I can before it gets dark. Want to have a go?
+    dialogueText: Hey! I've seen you around here before. I'm trying to catch as many
+      of these as I can before it gets dark. Want to have a go?
     choices:
     - choiceText: Yeah sure!
       nextNodeID: agree
