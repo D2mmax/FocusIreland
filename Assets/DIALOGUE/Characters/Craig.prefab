@@ -107,23 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eacdf72e55bb044c81c445e6b6842e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Billboard
---- !u!114 &2122603440564675601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3316082997595439282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31c80526139ca6b40b1408e865631540, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
-  sceneConfig: {fileID: 11400000, guid: cef15568550ecb4489a2da7a0e0e7ddc, type: 2}
-  dialogueTree: {fileID: 11400000, guid: fc111b1168220374d8b0257b421f1306, type: 2}
-  interactPrompt: {fileID: 4169334042286248121}
-  loadSceneOnEnd: 0
-  sceneToLoad: 
 --- !u!65 &2664365881800734953
 BoxCollider:
   m_ObjectHideFlags: 0
