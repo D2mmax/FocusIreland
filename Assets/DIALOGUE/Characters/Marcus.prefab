@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1077723200317695918}
   - component: {fileID: 4865027853213732245}
   - component: {fileID: 6723676594187538285}
+  - component: {fileID: 6009389587937223653}
   m_Layer: 0
   m_Name: Marcus
   m_TagString: Untagged
@@ -145,6 +146,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.1428256, y: 0, z: -0.06292598}
+--- !u!114 &6009389587937223653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705763829675269239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907d768bd0831024f862cbae393adcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FaceChecker
+  faceSprites:
+  - {fileID: 1985536045, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 1821274980, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: -1934647235, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 876288933, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 1318039224, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
 --- !u!1001 &7523490051124038648
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2063575191272511531}
   - component: {fileID: 2530585565305467786}
   - component: {fileID: 8281843138509043328}
+  - component: {fileID: 818959749725283729}
   m_Layer: 0
   m_Name: "R\xF3is\xEDn"
   m_TagString: Untagged
@@ -127,6 +128,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.1428256, y: 0, z: -0.06292598}
+--- !u!114 &818959749725283729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522268925029146301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 907d768bd0831024f862cbae393adcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FaceChecker
+  faceSprites:
+  - {fileID: 822728390, guid: d73b905af7f3f334186f056aab98381d, type: 3}
+  - {fileID: 1473993671, guid: d73b905af7f3f334186f056aab98381d, type: 3}
+  - {fileID: 1281942055, guid: d73b905af7f3f334186f056aab98381d, type: 3}
+  - {fileID: -3174756, guid: d73b905af7f3f334186f056aab98381d, type: 3}
+  - {fileID: 1009098866, guid: d73b905af7f3f334186f056aab98381d, type: 3}
 --- !u!1001 &3526456144137557035
 PrefabInstance:
   m_ObjectHideFlags: 0
