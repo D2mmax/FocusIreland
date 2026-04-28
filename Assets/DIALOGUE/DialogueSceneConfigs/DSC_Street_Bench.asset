@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9110263bbb4dc9f46a3f7f909b4ddabf, type: 3}
-  m_Name: DSC_Shelter_Suitcase
+  m_Name: DSC_Street_Bench
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
-  npcName: Siobhán
+  npcName: "Ciar\xE1n"
   npcSprite: {fileID: 0}
   dynamicNPCSprites:
   - {fileID: 0}
@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 0}
   playerSprite: {fileID: 0}
   backgroundSprite: {fileID: 0}
-  repeatLine: '"I miss my old room"'
+  repeatLine: It's fine.
   hideNPCSprite: 1
   hidePlayerSprite: 1
   hideBackground: 1

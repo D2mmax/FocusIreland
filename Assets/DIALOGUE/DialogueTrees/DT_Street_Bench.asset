@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
-  m_Name: DT_Shelter_Suitcase
+  m_Name: DT_Street_Bench
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
   startNodeID: start
   nodes:
   - nodeID: start
     speaker: 1
-    dialogueText: Most of our stuff is in storage. Mam says it won't be long.
-    continueNodeID: mam_call
+    dialogueText: I used to take the 39 bus. It took eleven minutes. I'd sit at the top if I could get it.
+    continueNodeID: bench_2
     choices: []
-  - nodeID: mam_call
-    speaker: 0
-    dialogueText: Ciarán! Toast is ready, come on!
+  - nodeID: bench_2
+    speaker: 1
+    dialogueText: Now I just walk. It's fine.
     continueNodeID:
     choices: []

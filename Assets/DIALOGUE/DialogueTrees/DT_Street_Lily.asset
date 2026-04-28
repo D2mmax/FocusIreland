@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Street_Lily
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: There you are. I've been standing here for ages. Come on, we're going to be late.
+    choices: []
+    continueNodeID: question
+  - nodeID: question
+    speaker: 0
+    dialogueText: So where did you move to? Is it far? Did you get your own room?
+    choices:
+    - choiceText: It's fine. Just different.
+      nextNodeID: choice1_lily
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: It's kind of small actually.
+      nextNodeID: choice2_lily
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Can we just go to class?
+      nextNodeID: choice3_lily
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    continueNodeID: 
+  - nodeID: choice1_lily
+    speaker: 0
+    dialogueText: Different how? Is it bigger?
+    choices: []
+    continueNodeID: choice1_ciaran
+  - nodeID: choice1_ciaran
+    speaker: 1
+    dialogueText: About the same.
+    choices: []
+    continueNodeID: choice1_end
+  - nodeID: choice1_end
+    speaker: 0
+    dialogueText: Right.
+    choices: []
+    continueNodeID: converge
+  - nodeID: choice2_lily
+    speaker: 0
+    dialogueText: Ah, that's rubbish. Did you at least get your own room?
+    choices: []
+    continueNodeID: choice2_ciaran
+  - nodeID: choice2_ciaran
+    speaker: 1
+    dialogueText: Sort of.
+    choices: []
+    continueNodeID: choice2_end
+  - nodeID: choice2_end
+    speaker: 0
+    dialogueText: Sort of? What does sort of mean?
+    choices: []
+    continueNodeID: converge
+  - nodeID: choice3_lily
+    speaker: 0
+    dialogueText: Yeah, course.
+    choices: []
+    continueNodeID: converge
+  - nodeID: converge
+    speaker: 0
+    dialogueText: Right, so my brother tried to do a backflip on the trampoline yesterday...
+    choices: []
+    continueNodeID: 
