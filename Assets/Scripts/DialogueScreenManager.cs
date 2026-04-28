@@ -20,6 +20,10 @@ public class DialogueScreenManager : MonoBehaviour
     public TextMeshProUGUI npcNameText;
     public TextMeshProUGUI dialogueText;
 
+    [Header("Player Side Text")]
+    public TextMeshProUGUI playerNameText;
+    public TextMeshProUGUI playerDialogueText;
+
     [Header("Choice Buttons (exactly 3)")]
     public Button[] choiceButtons;
     private TextMeshProUGUI[] choiceLabels;
@@ -100,7 +104,25 @@ public class DialogueScreenManager : MonoBehaviour
         if (node == null) { EndDialogue(); return; }
         currentNode = node;
 
-        dialogueText.text = node.dialogueText;
+        bool isPlayerSpeaking = node.speaker == DialogueNode.Speaker.Player;
+
+        // NPC side
+        if (npcNameText != null)        npcNameText.gameObject.SetActive(!isPlayerSpeaking);
+        if (dialogueText != null)       dialogueText.gameObject.SetActive(!isPlayerSpeaking);
+
+        // Player side
+        if (playerNameText != null)     playerNameText.gameObject.SetActive(isPlayerSpeaking);
+        if (playerDialogueText != null) playerDialogueText.gameObject.SetActive(isPlayerSpeaking);
+
+        if (isPlayerSpeaking)
+        {
+            if (playerNameText != null)     playerNameText.text = "Ciarán";
+            if (playerDialogueText != null) playerDialogueText.text = node.dialogueText;
+        }
+        else
+        {
+            dialogueText.text = node.dialogueText;
+        }
 
         foreach (var btn in choiceButtons) btn.gameObject.SetActive(false);
         if (closeButton != null) closeButton.gameObject.SetActive(false);
