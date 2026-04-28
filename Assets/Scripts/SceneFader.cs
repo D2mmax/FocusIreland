@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class SceneFader : MonoBehaviour
 {
@@ -9,8 +10,22 @@ public class SceneFader : MonoBehaviour
 
     public float fadeDuration = 0.5f;
 
+    [Header("Timeskip Text (optional)")]
+    public TextMeshProUGUI timeskipText;
+
     private Image fadeImage;
     private bool isFading = false;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void Bootstrap()
+    {
+        if (Instance != null) return;
+        GameObject prefab = Resources.Load<GameObject>("SceneFader");
+        if (prefab != null)
+            Instantiate(prefab);
+        else
+            Debug.LogWarning("SceneFader: No prefab found in Resources/SceneFader. Add it to Assets/Resources/.");
+    }
 
     void Awake()
     {
@@ -20,30 +35,86 @@ public class SceneFader : MonoBehaviour
         fadeImage = GetComponentInChildren<Image>();
         SetAlpha(0f);
         fadeImage.raycastTarget = false;
+        if (timeskipText != null) timeskipText.gameObject.SetActive(false);
     }
 
     void OnEnable()
-{
-    SceneManager.sceneLoaded += OnSceneLoaded;
-}
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-void OnDisable()
-{
-    SceneManager.sceneLoaded -= OnSceneLoaded;
-}
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
-void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-{
-    if (scene.name != "IntroScene" && scene.name != "StartScene")
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name != "IntroScene" && scene.name != "StartScene")
+            StartCoroutine(FadeInDelayed());
+    }
+
+    IEnumerator FadeInDelayed()
+    {
+        SetAlpha(1f);
+        yield return null;
+        yield return null;
+        yield return null;
         StartCoroutine(FadeIn());
-}
+    }
 
     public void FadeTo(string sceneName)
-{
-    Debug.Log("[SceneFader] FadeTo called. isFading: " + isFading + " scene: " + sceneName);
-    if (!isFading)
-        StartCoroutine(FadeOutAndLoad(sceneName));
-}
+    {
+        if (!isFading)
+            StartCoroutine(FadeOutAndLoad(sceneName));
+    }
+
+    // Fades to black, shows text, fires onBlack callback (start dialogue here),
+    // holds briefly, then fades back in so dialogue is already visible on reveal
+    public void FadeToBlackWithText(string text, float holdDuration, System.Action onBlack)
+    {
+        if (!isFading)
+            StartCoroutine(RunTimeskip(text, holdDuration, onBlack));
+    }
+
+    IEnumerator RunTimeskip(string text, float holdDuration, System.Action onBlack)
+    {
+        isFading = true;
+        fadeImage.raycastTarget = true;
+
+        // Fade to black
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / fadeDuration;
+            SetAlpha(Mathf.Clamp01(t));
+            yield return null;
+        }
+        SetAlpha(1f);
+
+        // Show text
+        if (timeskipText != null)
+        {
+            timeskipText.text = text;
+            timeskipText.gameObject.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(holdDuration);
+
+        // Fire callback (start dialogue) while still black
+        onBlack?.Invoke();
+
+        // Brief pause to let dialogue system initialise
+        yield return null;
+        yield return null;
+
+        // Hide text and fade back in — dialogue already running underneath
+        if (timeskipText != null) timeskipText.gameObject.SetActive(false);
+
+        isFading = false;
+        fadeImage.raycastTarget = false;
+        StartCoroutine(FadeIn());
+    }
 
     public IEnumerator FadeIn()
     {
@@ -72,6 +143,8 @@ void OnSceneLoaded(Scene scene, LoadSceneMode mode)
             SetAlpha(Mathf.Clamp01(t));
             yield return null;
         }
+        SetAlpha(1f);
+        isFading = false;
         SceneManager.LoadScene(sceneName);
     }
 
@@ -79,9 +152,10 @@ void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (fadeImage) fadeImage.color = new Color(0f, 0f, 0f, alpha);
     }
+
     public void ForceReady()
     {
-    isFading = false;
-    StopAllCoroutines();
+        isFading = false;
+        StopAllCoroutines();
     }
 }
