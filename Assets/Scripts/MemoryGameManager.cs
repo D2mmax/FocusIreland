@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     public int score = 0;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timerText;
+
+    [Header("Timer")]
+    public float timeLimit = 40f;
 
     [Header("Audio")]
     public AudioSource audioSource;
@@ -33,6 +37,8 @@ public class GameManager : MonoBehaviour
 
     private int totalPairs;
     private int matchedPairs;
+    private float timeRemaining;
+    private bool gameOver = false;
 
     void Awake()
     {
@@ -41,6 +47,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        timeRemaining = timeLimit;
+
         List<Sprite> cards = new List<Sprite>();
 
         foreach (Sprite fruit in fruits)
@@ -68,11 +76,28 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (gameOver) return;
+
+        timeRemaining -= Time.deltaTime;
+
+        if (timerText != null)
+            timerText.text = "Time: " + Mathf.CeilToInt(Mathf.Max(timeRemaining, 0f));
+
+        if (timeRemaining <= 0f)
+        {
+            gameOver = true;
+            StartCoroutine(FailGame());
+        }
+    }
+
     public void CardFlipped(Card card)
     {
+        if (gameOver) return;
+
         flipped.Add(card);
 
-        // 🔊 Flip sound
         if (audioSource != null && flipSound != null)
             audioSource.PlayOneShot(flipSound);
 
@@ -90,16 +115,17 @@ public class GameManager : MonoBehaviour
             matchedPairs++;
             AddScore(10);
 
-            // 🔊 Match sound
             if (audioSource != null && matchSound != null)
                 audioSource.PlayOneShot(matchSound);
 
             if (matchedPairs >= totalPairs)
+            {
+                gameOver = true;
                 StartCoroutine(CompleteGame());
+            }
         }
         else
         {
-            // 🔊 Wrong sound
             if (audioSource != null && wrongSound != null)
                 audioSource.PlayOneShot(wrongSound);
 
@@ -113,8 +139,26 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CompleteGame()
     {
+        MinigameResult.hasPlayed = true;
+        MinigameResult.passed = true;
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(sceneToLoadOnComplete);
+        LoadNextScene();
+    }
+
+    IEnumerator FailGame()
+    {
+        MinigameResult.hasPlayed = true;
+        MinigameResult.passed = false;
+        yield return new WaitForSeconds(1f);
+        LoadNextScene();
+    }
+
+    void LoadNextScene()
+    {
+        if (SceneFader.Instance != null)
+            SceneFader.Instance.FadeTo(sceneToLoadOnComplete);
+        else
+            SceneManager.LoadScene(sceneToLoadOnComplete);
     }
 
     public void AddScore(int amount)
@@ -125,6 +169,9 @@ public class GameManager : MonoBehaviour
             scoreText.text = "Score: " + score;
 
         if (scoreToComplete > 0 && score >= scoreToComplete)
+        {
+            gameOver = true;
             StartCoroutine(CompleteGame());
+        }
     }
 }
