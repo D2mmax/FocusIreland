@@ -31,7 +31,7 @@ MonoBehaviour:
     continueNodeID: ciaran_2
   - nodeID: ciaran_2
     speaker: 1
-    dialogueText: "..."
+    dialogueText: ...
     choices: []
     continueNodeID: lily_3
   - nodeID: lily_3
@@ -71,7 +71,7 @@ MonoBehaviour:
     continueNodeID: lily_question
   - nodeID: lily_question
     speaker: 0
-    dialogueText: You doing anything this weekend?
+    dialogueText: Anyway are you doing anything this weekend?
     choices:
     - choiceText: Not really.
       nextNodeID: choice1_lily
@@ -91,7 +91,7 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
-    continueNodeID:
+    continueNodeID: 
   - nodeID: choice1_lily
     speaker: 0
     dialogueText: Me neither. We should do something.
@@ -116,4 +116,4 @@ MonoBehaviour:
     speaker: 0
     dialogueText: Right. Eat your lunch.
     choices: []
-    continueNodeID:
+    continueNodeID: 
