@@ -15,11 +15,9 @@ public static class MinigameResult
 public static class DayFlags
 {
     public static int lunchLilyChoice = 1;
-    public static bool schoolCompleted = false;
 
     public static void Reset()
     {
         lunchLilyChoice = 1;
-        schoolCompleted = false;
     }
 }

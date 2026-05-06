@@ -4,19 +4,18 @@ public class PlayerSpawner : MonoBehaviour
 {
     [SerializeField] private Transform defaultSpawn;
     [SerializeField] private Transform doorSpawn;
-    [SerializeField] private Transform schoolSpawn;
     [SerializeField] private string expectedDoorID = "schooldoorinside";
 
     void Start()
     {
+        if (SceneTransitionManager.Instance != null)
+        Debug.Log("Last door: " + SceneTransitionManager.Instance.lastDoor);
+    else
+        Debug.Log("SceneTransitionManager is NULL");
         GameObject player = GameObject.FindWithTag("Player");
         if (player == null) return;
 
-        if (DayFlags.schoolCompleted && schoolSpawn != null)
-        {
-            player.transform.position = schoolSpawn.position;
-        }
-        else if (SceneTransitionManager.Instance != null
+        if (SceneTransitionManager.Instance != null 
             && SceneTransitionManager.Instance.lastDoor == expectedDoorID)
         {
             player.transform.position = doorSpawn.position;
