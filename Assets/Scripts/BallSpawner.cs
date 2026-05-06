@@ -3,14 +3,31 @@ using UnityEngine;
 public class BallSpawner : MonoBehaviour
 {
     public GameObject ballPrefab;
-    public float spawnWidth = 8f;
-    public float spawnHeight = 6f;
+    public Transform spawnPoint;
 
     private GameObject currentBall;
 
+    [Header("Anti-spam")]
+    public float spawnDelay = 0.5f;
+    private float spawnTimer = 0f;
+    private bool canSpawn = true;
+
     void Update()
     {
-        if (currentBall == null)
+        if (!canSpawn)
+        {
+            spawnTimer += Time.deltaTime;
+
+            if (spawnTimer >= spawnDelay)
+            {
+                canSpawn = true;
+                spawnTimer = 0f;
+            }
+
+            return;
+        }
+
+        if (currentBall == null && !PlayerBallPickup.PlayerHasBall)
         {
             SpawnBall();
         }
@@ -18,9 +35,13 @@ public class BallSpawner : MonoBehaviour
 
     void SpawnBall()
     {
-        float randomX = Random.Range(-spawnWidth, spawnWidth);
-        Vector3 spawnPos = new Vector3(randomX, spawnHeight, 0f);
+        canSpawn = false; // lock spawn immediately
 
-        currentBall = Instantiate(ballPrefab, spawnPos, Quaternion.identity);
+        currentBall = Instantiate(ballPrefab, spawnPoint.position, Quaternion.identity);
+    }
+
+    public void ClearBall()
+    {
+        currentBall = null;
     }
 }
