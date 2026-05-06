@@ -16,69 +16,89 @@ MonoBehaviour:
   nodes:
   - nodeID: start
     speaker: 0
-    dialogueText: There you are. I've been standing here for ages. Come on, we're going to be late.
-    choices: []
+    dialogueText: There you are. I've been standing here for ages.
     continueNodeID: question
+    choices: []
   - nodeID: question
     speaker: 0
     dialogueText: So where did you move to? Is it far? Did you get your own room?
+    continueNodeID:
     choices:
-    - choiceText: It's fine. Just different.
-      nextNodeID: choice1_lily
-      ehcEffect:
-        energyDelta: 0
-        hopeDelta: 0
-        connectionDelta: 0
-    - choiceText: It's kind of small actually.
-      nextNodeID: choice2_lily
+    - choiceText: Did you seriously wait out here the whole time?
+      nextNodeID: humour_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+    - choiceText: It's kind of small actually.
+      nextNodeID: honest_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
     - choiceText: Can we just go to class?
-      nextNodeID: choice3_lily
+      nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
-    continueNodeID: 
-  - nodeID: choice1_lily
+  - nodeID: humour_1
     speaker: 0
-    dialogueText: Different how? Is it bigger?
+    dialogueText: Obviously. Now answer the question.
+    continueNodeID: humour_2
     choices: []
-    continueNodeID: choice1_ciaran
-  - nodeID: choice1_ciaran
+  - nodeID: humour_2
     speaker: 1
-    dialogueText: About the same.
+    dialogueText: It's grand. Different.
+    continueNodeID: humour_3
     choices: []
-    continueNodeID: choice1_end
-  - nodeID: choice1_end
+  - nodeID: humour_3
     speaker: 0
-    dialogueText: Right.
+    dialogueText: Different how?
+    continueNodeID: humour_4
     choices: []
+  - nodeID: humour_4
+    speaker: 1
+    dialogueText: Just different.
+    continueNodeID: humour_5
+    choices: []
+  - nodeID: humour_5
+    speaker: 0
+    dialogueText: You're useless.
     continueNodeID: converge
-  - nodeID: choice2_lily
-    speaker: 0
-    dialogueText: Ah, that's rubbish. Did you at least get your own room?
     choices: []
-    continueNodeID: choice2_ciaran
-  - nodeID: choice2_ciaran
+  - nodeID: honest_1
+    speaker: 0
+    dialogueText: Ah that's rubbish. Did you at least get your own room?
+    continueNodeID: honest_2
+    choices: []
+  - nodeID: honest_2
     speaker: 1
     dialogueText: Sort of.
+    continueNodeID: honest_3
     choices: []
-    continueNodeID: choice2_end
-  - nodeID: choice2_end
+  - nodeID: honest_3
     speaker: 0
-    dialogueText: Sort of? What does sort of mean?
+    dialogueText: What does sort of mean?
+    continueNodeID: honest_4
     choices: []
-    continueNodeID: converge
-  - nodeID: choice3_lily
+  - nodeID: honest_4
+    speaker: 1
+    dialogueText: It's just temporary.
+    continueNodeID: honest_5
+    choices: []
+  - nodeID: honest_5
     speaker: 0
-    dialogueText: Yeah, course.
-    choices: []
+    dialogueText: Oh right. Okay.
     continueNodeID: converge
+    choices: []
+  - nodeID: shutdown_1
+    speaker: 0
+    dialogueText: Yeah, course. Sorry.
+    continueNodeID: converge
+    choices: []
   - nodeID: converge
     speaker: 0
-    dialogueText: Right, so my brother tried to do a backflip on the trampoline yesterday...
+    dialogueText: Come on, we're going to be late. Mr Byrne'll lose it.
+    continueNodeID:
     choices: []
-    continueNodeID: 

@@ -20,7 +20,7 @@ MonoBehaviour:
     continueNodeID:
     choices:
     - choiceText: Yeah, fine.
-      nextNodeID: closing_1
+      nextNodeID: yeah_fine
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
@@ -32,11 +32,16 @@ MonoBehaviour:
         hopeDelta: 0
         connectionDelta: 1
     - choiceText: (Say nothing. Sit down and eat the toast.)
-      nextNodeID: closing_1
+      nextNodeID: say_nothing
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+  - nodeID: yeah_fine
+    speaker: 0
+    dialogueText: Good. Eat your toast.
+    continueNodeID: closing_1
+    choices: []
   - nodeID: not_really
     speaker: 0
     dialogueText: Me neither.
@@ -47,14 +52,18 @@ MonoBehaviour:
     dialogueText: It'll get easier. The noise takes a while to tune out.
     continueNodeID: closing_1
     choices: []
+  - nodeID: say_nothing
+    speaker: 0
+    dialogueText: Right then.
+    continueNodeID: closing_1
+    choices: []
   - nodeID: closing_1
     speaker: 0
-    dialogueText: I'll be home by six. There's money in the front pocket of your
-      bag if you want something at lunch.
+    dialogueText: I'll be home by six. There's money in the front pocket of your bag if you want something at lunch.
     continueNodeID: closing_2
     choices: []
   - nodeID: closing_2
     speaker: 0
-    dialogueText: And Ciaran. Just - try today, yeah?
+    dialogueText: And Ciarán. Just - try today, yeah?
     continueNodeID:
     choices: []
