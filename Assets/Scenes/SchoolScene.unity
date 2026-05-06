@@ -7732,17 +7732,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3389762672148906158, guid: 67e26af38f2bed34985967dd492ba4f4, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7522268925029146301, guid: 67e26af38f2bed34985967dd492ba4f4, type: 3}
       propertyPath: m_Name
       value: Darragh
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522268925029146301, guid: 67e26af38f2bed34985967dd492ba4f4, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8600467839703393878, guid: 67e26af38f2bed34985967dd492ba4f4, type: 3}
       propertyPath: m_LocalPosition.x

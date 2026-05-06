@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2530585565305467786}
   - component: {fileID: 8281843138509043328}
   - component: {fileID: 7266514536399508775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Darragh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141,11 +141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FaceChecker
   faceSprites:
-  - {fileID: 623639467, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
-  - {fileID: 316381109, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
-  - {fileID: 1900295780, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
-  - {fileID: 289131883, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
-  - {fileID: -1352356520, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
+  - {fileID: -367469425, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: 2132163187, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: -302233259, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: 1389949857, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: 453003574, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
 --- !u!1001 &3526456144137557035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -197,6 +197,10 @@ PrefabInstance:
     - target: {fileID: 2304336803122943109, guid: ee912ceb1223cbf4fad8281d343cb854, type: 3}
       propertyPath: m_Name
       value: InteractPrompt 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2304336803122943109, guid: ee912ceb1223cbf4fad8281d343cb854, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
