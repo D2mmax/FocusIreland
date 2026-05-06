@@ -16,104 +16,94 @@ MonoBehaviour:
   nodes:
   - nodeID: start
     speaker: 0
-    dialogueText: You're quiet today.
-    choices: []
+    dialogueText: You've been weird all day.
     continueNodeID: ciaran_1
+    choices: []
   - nodeID: ciaran_1
     speaker: 1
-    dialogueText: I'm always quiet.
-    choices: []
+    dialogueText: I'm always weird.
     continueNodeID: lily_2
+    choices: []
   - nodeID: lily_2
     speaker: 0
-    dialogueText: Yeah but like. Quieter than quiet.
-    choices: []
-    continueNodeID: ciaran_2
-  - nodeID: ciaran_2
-    speaker: 1
-    dialogueText: ...
-    choices: []
+    dialogueText: Yeah but like. Actually weird. Since this morning.
     continueNodeID: lily_3
+    choices: []
   - nodeID: lily_3
     speaker: 0
-    dialogueText: Did you see that thing about the dog that learned to open the fridge?
-    choices: []
-    continueNodeID: ciaran_3
-  - nodeID: ciaran_3
-    speaker: 1
-    dialogueText: No.
-    choices: []
-    continueNodeID: lily_4
-  - nodeID: lily_4
-    speaker: 0
-    dialogueText: It's unbelievable. Like the dog just. Opens it. And gets the cheese.
-    choices: []
-    continueNodeID: ciaran_4
-  - nodeID: ciaran_4
-    speaker: 1
-    dialogueText: What kind of cheese?
-    choices: []
-    continueNodeID: lily_5
-  - nodeID: lily_5
-    speaker: 0
-    dialogueText: I don't know! Cheddar probably. Does it matter?
-    choices: []
-    continueNodeID: ciaran_5
-  - nodeID: ciaran_5
-    speaker: 1
-    dialogueText: I'm just saying. Important details.
-    choices: []
-    continueNodeID: lily_6
-  - nodeID: lily_6
-    speaker: 0
-    dialogueText: You're gas.
-    choices: []
-    continueNodeID: lily_question
-  - nodeID: lily_question
-    speaker: 0
-    dialogueText: Anyway are you doing anything this weekend?
+    dialogueText: Is everything okay at home?
+    continueNodeID:
     choices:
-    - choiceText: Not really.
-      nextNodeID: choice1_lily
+    - choiceText: Define okay.
+      nextNodeID: humour_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: It's just a lot going on. With the move and stuff.
+      nextNodeID: honest_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: Can we just eat.
+      nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
-    - choiceText: Might just stay in.
-      nextNodeID: choice2_lily
-      ehcEffect:
-        energyDelta: 0
-        hopeDelta: 0
-        connectionDelta: 1
-    - choiceText: Why?
-      nextNodeID: choice3_lily
-      ehcEffect:
-        energyDelta: 0
-        hopeDelta: 0
-        connectionDelta: 1
-    continueNodeID: 
-  - nodeID: choice1_lily
+  - nodeID: humour_1
     speaker: 0
-    dialogueText: Me neither. We should do something.
+    dialogueText: Ciarán.
+    continueNodeID: humour_2
     choices: []
-    continueNodeID: choice1_ciaran
-  - nodeID: choice1_ciaran
+  - nodeID: humour_2
     speaker: 1
-    dialogueText: Yeah maybe.
+    dialogueText: I'm fine. Honestly.
+    continueNodeID: humour_3
     choices: []
-    continueNodeID: converge
-  - nodeID: choice2_lily
+  - nodeID: humour_3
     speaker: 0
-    dialogueText: Fair enough.
-    choices: []
+    dialogueText: You don't have to tell me. But I'm not thick you know.
     continueNodeID: converge
-  - nodeID: choice3_lily
+    choices: []
+  - nodeID: honest_1
     speaker: 0
-    dialogueText: I don't know. Just asking.
+    dialogueText: The move to where though? You still haven't actually told me.
+    continueNodeID: honest_2
     choices: []
+  - nodeID: honest_2
+    speaker: 1
+    dialogueText: Just somewhere temporary. While things get sorted.
+    continueNodeID: honest_3
+    choices: []
+  - nodeID: honest_3
+    speaker: 0
+    dialogueText: Right. Okay.
+    continueNodeID: honest_4
+    choices: []
+  - nodeID: honest_4
+    speaker: 0
+    dialogueText: I'm here yeah?
     continueNodeID: converge
+    choices: []
+  - nodeID: shutdown_1
+    speaker: 0
+    dialogueText: Yeah. Course.
+    continueNodeID: shutdown_2
+    choices: []
+  - nodeID: shutdown_2
+    speaker: 0
+    dialogueText: I'm here if you want to talk. Just so you know.
+    continueNodeID: converge
+    choices: []
   - nodeID: converge
-    speaker: 0
-    dialogueText: Right. Eat your lunch.
+    speaker: 1
+    dialogueText: Thanks Lily.
+    continueNodeID: closing
     choices: []
-    continueNodeID: 
+  - nodeID: closing
+    speaker: 0
+    dialogueText: Don't go all soppy on me.
+    continueNodeID:
+    choices: []
