@@ -32,13 +32,18 @@ public class ClassroomDialogueTrigger : MonoBehaviour
     public DialogueSceneConfig lunchConfig;
     public DialogueTree lunchTree;
 
-    [Header("Next Scene (after lunch)")]
+    [Header("Darragh Dialogue (after lunch timeskip)")]
+    public DialogueSceneConfig darraghConfig;
+    public DialogueTree darraghTree;
+
+    [Header("Next Scene (after Darragh)")]
     public string nextScene;
+
+    [Header("Timeskip Settings")]
+    public float timeSkipHoldDuration = 2.5f;
 
     void Start()
     {
-        Debug.Log($"[ClassroomDialogueTrigger] hasPlayed={MinigameResult.hasPlayed} mathsPlayed={MinigameResult.mathsPlayed}");
-
         if (DialogueScreenManager.Instance == null)
         {
             Debug.LogWarning("ClassroomDialogueTrigger: DialogueScreenManager not found.");
@@ -47,10 +52,9 @@ public class ClassroomDialogueTrigger : MonoBehaviour
 
         if (!MinigameResult.hasPlayed)
         {
-            Debug.Log("[ClassroomDialogueTrigger] Branch: INTRO → Pack Your Bag minigame");
+            // First time — intro then Pack Your Bag
             System.Action onIntroEnd = () =>
             {
-                Debug.Log($"[ClassroomDialogueTrigger] Loading Pack Your Bag scene: '{minigameScene}'");
                 if (SceneFader.Instance != null)
                     SceneFader.Instance.FadeTo(minigameScene);
                 else
@@ -60,16 +64,14 @@ public class ClassroomDialogueTrigger : MonoBehaviour
         }
         else if (!MinigameResult.mathsPlayed)
         {
-            Debug.Log("[ClassroomDialogueTrigger] Branch: PASS/FAIL → Maths intro → Maths minigame");
+            // Returned from Pack Your Bag — pass/fail then maths intro then maths minigame
             DialogueSceneConfig config = MinigameResult.passed ? passConfig : failConfig;
             DialogueTree tree = MinigameResult.passed ? passTree : failTree;
 
             System.Action onPassFailEnd = () =>
             {
-                Debug.Log("[ClassroomDialogueTrigger] Pass/fail done, starting maths intro");
                 DialogueScreenManager.Instance.StartDialogue(mathsIntroConfig, mathsIntroTree, () =>
                 {
-                    Debug.Log($"[ClassroomDialogueTrigger] Loading maths minigame scene: '{mathsMinigameScene}'");
                     if (SceneFader.Instance != null)
                         SceneFader.Instance.FadeTo(mathsMinigameScene);
                     else
@@ -80,20 +82,28 @@ public class ClassroomDialogueTrigger : MonoBehaviour
         }
         else
         {
-            Debug.Log("[ClassroomDialogueTrigger] Branch: POST MATHS → Lunch → Next scene");
+            // Returned from maths minigame — post maths then lunch then timeskip then Darragh then next scene
             MinigameResult.Reset();
 
             System.Action onPostMathsEnd = () =>
             {
                 DialogueScreenManager.Instance.StartDialogue(lunchConfig, lunchTree, () =>
                 {
-                    if (!string.IsNullOrEmpty(nextScene))
+                    string timeskipText = "Last class. Almost there. Then Darragh opened his mouth.";
+                    SceneFader.Instance.FadeToBlackWithText(timeskipText, timeSkipHoldDuration, () =>
                     {
-                        if (SceneFader.Instance != null)
-                            SceneFader.Instance.FadeTo(nextScene);
-                        else
-                            UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
-                    }
+                        DialogueScreenManager.Instance.StartDialogue(darraghConfig, darraghTree, () =>
+                        {
+                            DayFlags.schoolCompleted = true;
+                            if (!string.IsNullOrEmpty(nextScene))
+                            {
+                                if (SceneFader.Instance != null)
+                                    SceneFader.Instance.FadeTo(nextScene);
+                                else
+                                    UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+                            }
+                        });
+                    });
                 });
             };
             DialogueScreenManager.Instance.StartDialogue(postMathsConfig, postMathsTree, onPostMathsEnd);
