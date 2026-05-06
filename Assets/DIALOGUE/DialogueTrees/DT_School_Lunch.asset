@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_School_Lunch
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: You're quiet today.
+    choices: []
+    continueNodeID: ciaran_1
+  - nodeID: ciaran_1
+    speaker: 1
+    dialogueText: I'm always quiet.
+    choices: []
+    continueNodeID: lily_2
+  - nodeID: lily_2
+    speaker: 0
+    dialogueText: Yeah but like. Quieter than quiet.
+    choices: []
+    continueNodeID: ciaran_2
+  - nodeID: ciaran_2
+    speaker: 1
+    dialogueText: ...
+    choices: []
+    continueNodeID: lily_3
+  - nodeID: lily_3
+    speaker: 0
+    dialogueText: Did you see that thing about the dog that learned to open the fridge?
+    choices: []
+    continueNodeID: ciaran_3
+  - nodeID: ciaran_3
+    speaker: 1
+    dialogueText: No.
+    choices: []
+    continueNodeID: lily_4
+  - nodeID: lily_4
+    speaker: 0
+    dialogueText: It's unbelievable. Like the dog just. Opens it. And gets the cheese.
+    choices: []
+    continueNodeID: ciaran_4
+  - nodeID: ciaran_4
+    speaker: 1
+    dialogueText: What kind of cheese?
+    choices: []
+    continueNodeID: lily_5
+  - nodeID: lily_5
+    speaker: 0
+    dialogueText: I don't know! Cheddar probably. Does it matter?
+    choices: []
+    continueNodeID: ciaran_5
+  - nodeID: ciaran_5
+    speaker: 1
+    dialogueText: I'm just saying. Important details.
+    choices: []
+    continueNodeID: lily_6
+  - nodeID: lily_6
+    speaker: 0
+    dialogueText: You're gas.
+    choices: []
+    continueNodeID: lily_question
+  - nodeID: lily_question
+    speaker: 0
+    dialogueText: Anyway are you doing anything this weekend?
+    choices:
+    - choiceText: Not really.
+      nextNodeID: choice1_lily
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: Might just stay in.
+      nextNodeID: choice2_lily
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Why?
+      nextNodeID: choice3_lily
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    continueNodeID: 
+  - nodeID: choice1_lily
+    speaker: 0
+    dialogueText: Me neither. We should do something.
+    choices: []
+    continueNodeID: choice1_ciaran
+  - nodeID: choice1_ciaran
+    speaker: 1
+    dialogueText: Yeah maybe.
+    choices: []
+    continueNodeID: converge
+  - nodeID: choice2_lily
+    speaker: 0
+    dialogueText: Fair enough.
+    choices: []
+    continueNodeID: converge
+  - nodeID: choice3_lily
+    speaker: 0
+    dialogueText: I don't know. Just asking.
+    choices: []
+    continueNodeID: converge
+  - nodeID: converge
+    speaker: 0
+    dialogueText: Right. Eat your lunch.
+    choices: []
+    continueNodeID: 

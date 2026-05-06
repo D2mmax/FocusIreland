@@ -20,7 +20,7 @@ MonoBehaviour:
     continueNodeID: mam_call
     choices: []
   - nodeID: mam_call
-    speaker: 1
-    dialogueText: Ciaran! Toast is ready, come on!
+    speaker: 0
+    dialogueText: Ciarán! Toast is ready, come on!
     continueNodeID:
     choices: []

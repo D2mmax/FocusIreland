@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9110263bbb4dc9f46a3f7f909b4ddabf, type: 3}
   m_Name: DSC_Shelter_Suitcase
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
-  npcName: 
+  npcName: Siobhán
   npcSprite: {fileID: 0}
   dynamicNPCSprites:
   - {fileID: 0}
