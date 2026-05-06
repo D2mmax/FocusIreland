@@ -19,13 +19,13 @@ MonoBehaviour:
     dialogueText: Alright Ciarán. You heading home?
     continueNodeID:
     choices:
-    - choiceText: Eventually.
+    - choiceText: Eventually yeah.
       nextNodeID: humour_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
-    - choiceText: Yeah. Long day.
+    - choiceText: Yeah. Long one.
       nextNodeID: honest_1
       ehcEffect:
         energyDelta: 0
@@ -39,22 +39,47 @@ MonoBehaviour:
         connectionDelta: 0
   - nodeID: humour_1
     speaker: 0
-    dialogueText: Ha. Few of us are going to the court behind the shops if you're in. Nothing serious.
+    dialogueText: Ha. Rough day?
+    continueNodeID: humour_2
+    choices: []
+  - nodeID: humour_2
+    speaker: 1
+    dialogueText: Something like that.
     continueNodeID: converge
     choices: []
   - nodeID: honest_1
     speaker: 0
-    dialogueText: Tell me about it. Few of us are heading to the court behind the shops. Do you good.
+    dialogueText: That maths didn't help.
+    continueNodeID: honest_2
+    choices: []
+  - nodeID: honest_2
+    speaker: 1
+    dialogueText: Nah it didn't.
     continueNodeID: converge
     choices: []
   - nodeID: shutdown_1
     speaker: 0
-    dialogueText: Few of us are heading to the court behind the shops if you want to come.
+    dialogueText: Same. Dead on its feet that class.
     continueNodeID: converge
     choices: []
   - nodeID: converge
+    speaker: 0
+    dialogueText: Few of us are heading to the court behind the shops if you're doing nothing. Just a casual game.
+    continueNodeID: ciaran_ask
+    choices: []
+  - nodeID: ciaran_ask
     speaker: 1
-    dialogueText: Yeah go on.
+    dialogueText: Basketball?
+    continueNodeID: marcus_confirm
+    choices: []
+  - nodeID: marcus_confirm
+    speaker: 0
+    dialogueText: Yeah. Nothing serious like.
+    continueNodeID: ciaran_agree
+    choices: []
+  - nodeID: ciaran_agree
+    speaker: 1
+    dialogueText: Ah go on then.
     continueNodeID: closing
     choices: []
   - nodeID: closing

@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MathsMinigamr.unity
     guid: 97445ba7a6dedc94f98d58ff4e6cdd9b
+  - enabled: 1
+    path: Assets/Scenes/BasketBallMiniGame.unity
+    guid: ed8f5b80f054f534a8a2d6c9495531bd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6b8e30bef0cfa6b46b47c95b5a24d2c2, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

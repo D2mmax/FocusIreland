@@ -4560,6 +4560,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4865027853213732245, guid: 340ced18f978a494982b8bf4abe70b42, type: 3}
+      propertyPath: sceneConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: afcbf3d435cda9a41ac9410eccb5af21, type: 2}
+    - target: {fileID: 4865027853213732245, guid: 340ced18f978a494982b8bf4abe70b42, type: 3}
+      propertyPath: sceneToLoad
+      value: BasketBallMinigame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865027853213732245, guid: 340ced18f978a494982b8bf4abe70b42, type: 3}
+      propertyPath: dialogueTree
+      value: 
+      objectReference: {fileID: 11400000, guid: a548c161278b8a34b82f4aded2e73ac5, type: 2}
+    - target: {fileID: 4865027853213732245, guid: 340ced18f978a494982b8bf4abe70b42, type: 3}
+      propertyPath: loadSceneOnEnd
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8616063704979447677, guid: 340ced18f978a494982b8bf4abe70b42, type: 3}
       propertyPath: m_Layer
       value: 6

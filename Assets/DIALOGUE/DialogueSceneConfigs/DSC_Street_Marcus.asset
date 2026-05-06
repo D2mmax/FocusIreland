@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: DSC_Street_Marcus
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
   npcName: Marcus
-  npcSprite: {fileID: 0}
+  npcSprite: {fileID: 1985536045, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
   dynamicNPCSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  playerSprite: {fileID: 0}
-  backgroundSprite: {fileID: 0}
+  - {fileID: 1985536045, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 1821274980, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: -1934647235, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 876288933, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 1318039224, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 1fe38c4382f9292439f550aa1ceb7230, type: 3}
   repeatLine: 
-  hideNPCSprite: 1
-  hidePlayerSprite: 1
-  hideBackground: 1
+  hideNPCSprite: 0
+  hidePlayerSprite: 0
+  hideBackground: 0
