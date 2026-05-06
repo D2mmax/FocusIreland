@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: 1848415890, guid: af1c098fc9564cf40a4379c2605b7ae7, type: 3}
   - {fileID: 171698166, guid: af1c098fc9564cf40a4379c2605b7ae7, type: 3}
   playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
-  backgroundSprite: {fileID: 21300000, guid: bac2d1d432e38e749b7c4b0d716c5fb3, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: ee0199d700d29ec4aa88f72ddbfd4b77, type: 3}
   repeatLine: '"You are going to be late for school!"'
   hideNPCSprite: 0
   hidePlayerSprite: 0
