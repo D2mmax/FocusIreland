@@ -54,6 +54,7 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(completionDelay);
 
         DayFlags.basketballCompleted = true;
+        DayFlags.shelterState = 1;
 
         if (SceneFader.Instance != null)
             SceneFader.Instance.FadeTo(sceneToLoadOnComplete);

@@ -41,7 +41,6 @@ public class QuestionFlow : MonoBehaviour
 
         if (operation == 0)
         {
-            // Addition: up to 20
             num1 = Random.Range(5, 20);
             num2 = Random.Range(5, 20);
             correctAnswer = num1 + num2;
@@ -49,7 +48,6 @@ public class QuestionFlow : MonoBehaviour
         }
         else if (operation == 1)
         {
-            // Subtraction: up to 20, result always positive
             num1 = Random.Range(10, 25);
             num2 = Random.Range(1, num1);
             correctAnswer = num1 - num2;
@@ -57,7 +55,6 @@ public class QuestionFlow : MonoBehaviour
         }
         else
         {
-            // Multiplication: 1-9 x 1-9
             num1 = Random.Range(2, 10);
             num2 = Random.Range(2, 10);
             correctAnswer = num1 * num2;
@@ -96,7 +93,6 @@ public class QuestionFlow : MonoBehaviour
             }
             else
             {
-                // Wrong — show correct answer then move on
                 questionText.text = num1 + " " + operatorSymbol + " " + num2 + " = " + correctAnswer;
                 questionText.color = new Color32(255, 0, 0, 255);
                 inputField.interactable = false;
@@ -140,6 +136,7 @@ public class QuestionFlow : MonoBehaviour
 
         MinigameResult.hasPlayed = true;
         MinigameResult.mathsPlayed = true;
+        DayFlags.mathsScore = score;
 
         if (SceneFader.Instance != null)
             SceneFader.Instance.FadeTo(sceneToLoadOnComplete);
