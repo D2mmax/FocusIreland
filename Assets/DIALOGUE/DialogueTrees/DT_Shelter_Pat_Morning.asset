@@ -16,6 +16,76 @@ MonoBehaviour:
   nodes:
   - nodeID: start
     speaker: 0
-    dialogueText: Mornin'.
+    dialogueText: Third cup of tea and it's not even eight. That's never a good sign.
+    continueNodeID: start2
+    choices: []
+  - nodeID: start2
+    speaker: 0
+    dialogueText: You're up early.
+    continueNodeID:
+    choices:
+    - choiceText: Three cups means it was a bad night?
+      nextNodeID: humour_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: I didn't really sleep either.
+      nextNodeID: honest_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: (Nod and keep walking.)
+      nextNodeID: shutdown_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: humour_1
+    speaker: 0
+    dialogueText: Ah, I'm only giving out.
+    continueNodeID: bonbon
+    choices: []
+  - nodeID: honest_1
+    speaker: 0
+    dialogueText: Yeah. Takes a while.
+    continueNodeID: bonbon
+    choices: []
+  - nodeID: shutdown_1
+    speaker: 0
+    dialogueText: Hmm.
+    continueNodeID: shutdown_end
+    choices: []
+  - nodeID: shutdown_end
+    speaker: 0
+    dialogueText: Mind yourself.
+    continueNodeID:
+    choices: []
+  - nodeID: bonbon
+    speaker: 0
+    dialogueText: Here. *slides a bonbon across the desk*
+    continueNodeID:
+    choices:
+    - choiceText: What's this for?
+      nextNodeID: humour_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: Do you work all night?
+      nextNodeID: honest_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 2
+        connectionDelta: 0
+  - nodeID: humour_2
+    speaker: 0
+    dialogueText: Ah, just don't tell the others.
+    continueNodeID:
+    choices: []
+  - nodeID: honest_2
+    speaker: 0
+    dialogueText: Most nights. Long enough to know this place isn't the end of anything.
     continueNodeID:
     choices: []

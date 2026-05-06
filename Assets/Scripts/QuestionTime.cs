@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -14,14 +14,19 @@ public class QuestionFlow : MonoBehaviour
     public AudioClip correctSound;
     public AudioClip wrongSound;
 
+    [Header("Scene Transition")]
+    public string sceneToLoadOnComplete = "SchoolScene";
+
     private int num1;
     private int num2;
+    private int correctAnswer;
+    private string operatorSymbol;
 
     private int score = 0;
-    private int maxScore = 10;
+    private int questionsAnswered = 0;
+    private int maxQuestions = 10;
 
     private bool waitingForNext = false;
-    private bool isFlashing = false;
 
     void Start()
     {
@@ -32,75 +37,82 @@ public class QuestionFlow : MonoBehaviour
 
     void GenerateQuestion()
     {
-        num1 = Random.Range(1, 13);
-        num2 = Random.Range(1, 13);
+        int operation = Random.Range(0, 3);
 
-        questionText.text = num1 + " + " + num2 + " =";
-        questionText.color = new Color32(255, 0, 0, 255); // red
+        if (operation == 0)
+        {
+            // Addition: up to 20
+            num1 = Random.Range(5, 20);
+            num2 = Random.Range(5, 20);
+            correctAnswer = num1 + num2;
+            operatorSymbol = "+";
+        }
+        else if (operation == 1)
+        {
+            // Subtraction: up to 20, result always positive
+            num1 = Random.Range(10, 25);
+            num2 = Random.Range(1, num1);
+            correctAnswer = num1 - num2;
+            operatorSymbol = "-";
+        }
+        else
+        {
+            // Multiplication: 1-9 x 1-9
+            num1 = Random.Range(2, 10);
+            num2 = Random.Range(2, 10);
+            correctAnswer = num1 * num2;
+            operatorSymbol = "x";
+        }
+
+        questionText.text = num1 + " " + operatorSymbol + " " + num2 + " =";
+        questionText.color = new Color32(255, 0, 0, 255);
 
         inputField.text = "";
         inputField.interactable = true;
 
-        // Focus input
         inputField.ActivateInputField();
         inputField.Select();
     }
 
     void CheckAnswer(string value)
     {
-        if (waitingForNext || isFlashing) return;
+        if (waitingForNext) return;
 
         if (int.TryParse(value, out int result))
         {
-            if (result == num1 + num2)
+            if (result == correctAnswer)
             {
-                // ✅ Correct
-                questionText.text = num1 + " + " + num2 + " = " + result;
-                questionText.color = new Color32(0, 0, 255, 255); // blue
+                questionText.text = num1 + " " + operatorSymbol + " " + num2 + " = " + result;
+                questionText.color = new Color32(0, 0, 255, 255);
                 inputField.interactable = false;
 
                 if (audioSource && correctSound)
                     audioSource.PlayOneShot(correctSound);
 
                 score++;
+                questionsAnswered++;
                 UpdateScore();
-                CheckMilestones();
-
                 StartCoroutine(NextQuestionDelay());
             }
             else
             {
-                // ❌ Wrong
+                // Wrong — show correct answer then move on
+                questionText.text = num1 + " " + operatorSymbol + " " + num2 + " = " + correctAnswer;
+                questionText.color = new Color32(255, 0, 0, 255);
+                inputField.interactable = false;
+
                 if (audioSource && wrongSound)
                     audioSource.PlayOneShot(wrongSound);
 
-                StartCoroutine(FlashWrong());
+                questionsAnswered++;
+                UpdateScore();
+                StartCoroutine(NextQuestionDelay());
             }
         }
         else
         {
-            // Not a number → refocus
             RefocusInput();
         }
-    }
-
-    IEnumerator FlashWrong()
-    {
-        isFlashing = true;
-
-        // Flash effect
-        questionText.color = Color.red;
-        yield return new WaitForSeconds(0.15f);
-
-        questionText.color = Color.white;
-        yield return new WaitForSeconds(0.15f);
-
-        questionText.color = new Color32(255, 0, 0, 255);
-
-        isFlashing = false;
-
-        // ✅ FIX: restore typing ability
-        RefocusInput();
     }
 
     IEnumerator NextQuestionDelay()
@@ -109,32 +121,36 @@ public class QuestionFlow : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        if (score < maxScore)
+        if (questionsAnswered < maxQuestions)
         {
             GenerateQuestion();
             waitingForNext = false;
         }
         else
         {
-            questionText.text = "Well Done!";
+            questionText.text = "Finished! " + score + "/" + maxQuestions;
             inputField.gameObject.SetActive(false);
+            StartCoroutine(CompleteMinigame());
         }
+    }
+
+    IEnumerator CompleteMinigame()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        MinigameResult.hasPlayed = true;
+        MinigameResult.mathsPlayed = true;
+
+        if (SceneFader.Instance != null)
+            SceneFader.Instance.FadeTo(sceneToLoadOnComplete);
+        else
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoadOnComplete);
     }
 
     void UpdateScore()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score + "/" + maxScore;
-    }
-
-    void CheckMilestones()
-    {
-        if (score == 5)
-        {
-            Debug.Log("Reached 5! Trigger dialogue here.");
-            // Example:
-            // dialogueManager.ShowNextLine();
-        }
+            scoreText.text = "Score: " + score + "/" + questionsAnswered;
     }
 
     void RefocusInput()

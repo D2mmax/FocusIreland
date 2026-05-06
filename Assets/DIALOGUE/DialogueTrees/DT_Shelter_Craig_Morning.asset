@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Craig_Morning
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: You just moved in yeah? I'm Craig.
+    continueNodeID:
+    choices:
+    - choiceText: That obvious?
+      nextNodeID: humour_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Yeah, yesterday. I'm Ciarán.
+      nextNodeID: honest_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: Yeah.
+      nextNodeID: shutdown_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: humour_1
+    speaker: 0
+    dialogueText: Little bit.
+    continueNodeID: converge
+    choices: []
+  - nodeID: honest_1
+    speaker: 0
+    dialogueText: How are you finding it?
+    continueNodeID: honest_1_ciaran
+    choices: []
+  - nodeID: honest_1_ciaran
+    speaker: 1
+    dialogueText: Still figuring it out.
+    continueNodeID: honest_1_craig
+    choices: []
+  - nodeID: honest_1_craig
+    speaker: 0
+    dialogueText: Yeah. You will.
+    continueNodeID: converge
+    choices: []
+  - nodeID: shutdown_1
+    speaker: 0
+    dialogueText: First few days are the worst. Gets easier.
+    continueNodeID: converge
+    choices: []
+  - nodeID: converge
+    speaker: 0
+    dialogueText: You heading to school?
+    continueNodeID:
+    choices:
+    - choiceText: Unfortunately.
+      nextNodeID: humour_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Yeah. You not going?
+      nextNodeID: honest_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: Yeah.
+      nextNodeID: shutdown_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: humour_2
+    speaker: 0
+    dialogueText: Fair enough. Better than sitting here anyway.
+    continueNodeID: closing_ciaran
+    choices: []
+  - nodeID: honest_2
+    speaker: 0
+    dialogueText: Waiting on a transfer. Should be sorted soon.
+    continueNodeID: closing_ciaran
+    choices: []
+  - nodeID: shutdown_2
+    speaker: 0
+    dialogueText: I'm waiting on a transfer myself. Gets boring quick, I'll tell you that.
+    continueNodeID: closing_ciaran
+    choices: []
+  - nodeID: closing_ciaran
+    speaker: 1
+    dialogueText: Right. I'd better get going. Might see you later.
+    continueNodeID: closing_craig
+    choices: []
+  - nodeID: closing_craig
+    speaker: 0
+    dialogueText: Yeah. See you.
+    continueNodeID:
+    choices: []
