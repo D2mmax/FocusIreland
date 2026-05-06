@@ -2950,10 +2950,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 247143398024065116, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
-      propertyPath: field of view
-      value: 35
-      objectReference: {fileID: 0}
     - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.57
@@ -2993,6 +2989,10 @@ PrefabInstance:
     - target: {fileID: 1578093335704212926, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412197452248890549, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
+      propertyPath: m_Priority
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6380173660875660100, guid: ddf043524ec4ee9499c518f99cc277e0, type: 3}
       propertyPath: field of view
@@ -9049,7 +9049,11 @@ MonoBehaviour:
   passTree: {fileID: 11400000, guid: 21d39a5aa7802b34989e9b5c651b5130, type: 2}
   failConfig: {fileID: 11400000, guid: 90b74e0b64a235e49a7630d782d6bff2, type: 2}
   failTree: {fileID: 11400000, guid: ec5ac599543c09541bb1641bafc71cd7, type: 2}
-  timeSkipHoldDuration: 5
+  mathsIntroConfig: {fileID: 11400000, guid: eed664d4a70e4ef47a08f83668dbbd90, type: 2}
+  mathsIntroTree: {fileID: 11400000, guid: 84de6e2f55029c34d80e87581918896b, type: 2}
+  mathsMinigameScene: MathsMinigamr
+  postMathsConfig: {fileID: 11400000, guid: de10816e5b97bd54597aadc08f71955a, type: 2}
+  postMathsTree: {fileID: 11400000, guid: 6f568cd32186e684dacf5b635643004e, type: 2}
   lunchConfig: {fileID: 11400000, guid: 5afdba3174c741e4c9d00a11c7044324, type: 2}
   lunchTree: {fileID: 11400000, guid: b7a733c3ba09d3a4aa33ec080a3434fb, type: 2}
   nextScene: 

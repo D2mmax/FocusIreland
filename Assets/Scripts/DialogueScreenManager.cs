@@ -194,8 +194,9 @@ public class DialogueScreenManager : MonoBehaviour
         playerImage.gameObject.SetActive(true);
         backgroundImage.gameObject.SetActive(true);
         HideScreen();
-        onDialogueEndCallback?.Invoke();
+        var callback = onDialogueEndCallback;
         onDialogueEndCallback = null;
+        callback?.Invoke();
     }
 
     void ShowScreen()
