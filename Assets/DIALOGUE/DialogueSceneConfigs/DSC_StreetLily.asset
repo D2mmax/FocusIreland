@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: -1920805358, guid: 85faf2ee4c7b86f45b8c751ff78166ee, type: 3}
   - {fileID: 1996366623, guid: 85faf2ee4c7b86f45b8c751ff78166ee, type: 3}
   playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
-  backgroundSprite: {fileID: 21300000, guid: 4b95a112197778e4189de07e465a7a0e, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 9ed5fda07658c1046b7471fe03e2b693, type: 3}
   repeatLine: 
   hideNPCSprite: 0
   hidePlayerSprite: 0
