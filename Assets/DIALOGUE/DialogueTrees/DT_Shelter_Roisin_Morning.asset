@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Roisin_Morning
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: Ciarán. Good morning. I'm Róisín, I work with Focus Ireland.
+    continueNodeID: ciaran_1
+    choices: []
+  - nodeID: ciaran_1
+    speaker: 1
+    dialogueText: I know. Mam told me.
+    continueNodeID: roisin_2
+    choices: []
+  - nodeID: roisin_2
+    speaker: 0
+    dialogueText: Good. Then I'll get straight to it.
+    continueNodeID: roisin_3
+    choices: []
+  - nodeID: roisin_3
+    speaker: 0
+    dialogueText: Focus Ireland helps families like yours find a way through this.
+    continueNodeID: roisin_4
+    choices: []
+  - nodeID: roisin_4
+    speaker: 0
+    dialogueText: Emergency accommodation is never meant to be permanent. Our job is to make sure it isn't.
+    continueNodeID: roisin_5
+    choices: []
+  - nodeID: roisin_5
+    speaker: 0
+    dialogueText: We work with the housing lists, we talk to councils, we find options your family might not even know exist.
+    continueNodeID: roisin_6
+    choices: []
+  - nodeID: roisin_6
+    speaker: 0
+    dialogueText: Your mam has been brilliant to work with by the way. She's been on top of everything.
+    continueNodeID: ciaran_2
+    choices: []
+  - nodeID: ciaran_2
+    speaker: 1
+    dialogueText: She doesn't show it.
+    continueNodeID: roisin_7
+    choices: []
+  - nodeID: roisin_7
+    speaker: 0
+    dialogueText: She wouldn't. But she is.
+    continueNodeID: roisin_8
+    choices: []
+  - nodeID: roisin_8
+    speaker: 0
+    dialogueText: Now. The reason I'm here this morning.
+    continueNodeID: roisin_9
+    choices: []
+  - nodeID: roisin_9
+    speaker: 0
+    dialogueText: There's a place. Two bedroom, Cabra area.
+    continueNodeID: roisin_10
+    choices: []
+  - nodeID: roisin_10
+    speaker: 0
+    dialogueText: It's not confirmed yet but we're pushing hard for it and I think we have a strong case.
+    continueNodeID:
+    choices:
+    - choiceText: What happens if it doesn't work out?
+      nextNodeID: choice_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: How long have you been doing this?
+      nextNodeID: choice_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 1
+  - nodeID: choice_1
+    speaker: 0
+    dialogueText: Then we find the next one. That's not me being dismissive.
+    continueNodeID: choice_1b
+    choices: []
+  - nodeID: choice_1b
+    speaker: 0
+    dialogueText: That's genuinely how this works. We don't stop at one.
+    continueNodeID: converge
+    choices: []
+  - nodeID: choice_2
+    speaker: 0
+    dialogueText: Seven years. And I'll tell you something.
+    continueNodeID: choice_2b
+    choices: []
+  - nodeID: choice_2b
+    speaker: 0
+    dialogueText: Most families find somewhere. It takes time. But they do.
+    continueNodeID: converge
+    choices: []
+  - nodeID: converge
+    speaker: 0
+    dialogueText: You're going to be okay Ciarán. I can't tell you exactly when.
+    continueNodeID: converge_2
+    choices: []
+  - nodeID: converge_2
+    speaker: 0
+    dialogueText: But I can tell you we're not going anywhere until this is sorted.
+    continueNodeID: ciaran_3
+    choices: []
+  - nodeID: ciaran_3
+    speaker: 1
+    dialogueText: Okay.
+    continueNodeID: roisin_11
+    choices: []
+  - nodeID: roisin_11
+    speaker: 0
+    dialogueText: Any other questions?
+    continueNodeID: ciaran_4
+    choices: []
+  - nodeID: ciaran_4
+    speaker: 1
+    dialogueText: No. Thanks.
+    continueNodeID: roisin_12
+    choices: []
+  - nodeID: roisin_12
+    speaker: 0
+    dialogueText: Good man. Let me go talk to your mam.
+    continueNodeID:
+    choices: []

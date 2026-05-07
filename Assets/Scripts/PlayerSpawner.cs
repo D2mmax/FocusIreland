@@ -22,18 +22,25 @@ public class PlayerSpawner : MonoBehaviour
         {
             if (DayFlags.shelterState == 0)
             {
+                // Morning before school — bedroom
                 if (bedroomSpawn != null)
                     player.transform.position = bedroomSpawn.position;
             }
             else if (DayFlags.shelterState == 1)
             {
-                if (DayFlags.crayonSortCompleted && aoifeSpawn != null)
-                    player.transform.position = aoifeSpawn.position;
-                else if (patDeskSpawn != null)
+                // Returning from basketball — Pat's desk
+                if (patDeskSpawn != null)
                     player.transform.position = patDeskSpawn.position;
             }
             else if (DayFlags.shelterState == 2)
             {
+                // Returning from crayon sort — near Aoife
+                if (aoifeSpawn != null)
+                    player.transform.position = aoifeSpawn.position;
+            }
+            else if (DayFlags.shelterState == 3)
+            {
+                // Next morning — bedroom
                 if (bedroomSpawn != null)
                     player.transform.position = bedroomSpawn.position;
             }

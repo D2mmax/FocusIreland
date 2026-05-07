@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Siobhan_Evening_Humour
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: How was it? Honestly.
+    continueNodeID: ciaran_1
+    choices: []
+  - nodeID: ciaran_1
+    speaker: 1
+    dialogueText: Life changing.
+    continueNodeID: siobhan_2
+    choices: []
+  - nodeID: siobhan_2
+    speaker: 0
+    dialogueText: Ciarán.
+    continueNodeID: ciaran_2
+    choices: []
+  - nodeID: ciaran_2
+    speaker: 1
+    dialogueText: It was fine. Grand.
+    continueNodeID: hw_question
+    choices: []
+  - nodeID: hw_question
+    speaker: 0
+    dialogueText: Did you hand in your homework?
+    continueNodeID:
+    choices:
+    - choiceText: Barely. Found it at the last second.
+      nextNodeID: hw_pass
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: Define hand in.
+      nextNodeID: hw_fail
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: hw_pass
+    speaker: 0
+    dialogueText: That's my boy.
+    continueNodeID: darragh_intro
+    choices: []
+  - nodeID: hw_fail
+    speaker: 0
+    dialogueText: Ciarán.
+    continueNodeID: hw_fail_ciaran
+    choices: []
+  - nodeID: hw_fail_ciaran
+    speaker: 1
+    dialogueText: Tomorrow. I'll bring it tomorrow.
+    continueNodeID: darragh_intro
+    choices: []
+  - nodeID: darragh_intro
+    speaker: 0
+    dialogueText: Anything happen?
+    continueNodeID: darragh_ciaran
+    choices: []
+  - nodeID: darragh_ciaran
+    speaker: 1
+    dialogueText: Some fella had opinions about my jumper.
+    continueNodeID: darragh_siobhan
+    choices: []
+  - nodeID: darragh_siobhan
+    speaker: 0
+    dialogueText: What kind of opinions?
+    continueNodeID: darragh_ciaran2
+    choices: []
+  - nodeID: darragh_ciaran2
+    speaker: 1
+    dialogueText: The wrong kind.
+    continueNodeID: darragh_siobhan2
+    choices: []
+  - nodeID: darragh_siobhan2
+    speaker: 0
+    dialogueText: Did you say anything?
+    continueNodeID: darragh_ciaran3
+    choices: []
+  - nodeID: darragh_ciaran3
+    speaker: 1
+    dialogueText: I was very dignified about it.
+    continueNodeID: darragh_siobhan3
+    choices: []
+  - nodeID: darragh_siobhan3
+    speaker: 0
+    dialogueText: I'm sure you were.
+    continueNodeID: lily_intro
+    choices: []
+  - nodeID: lily_intro
+    speaker: 0
+    dialogueText: Did you see Lily?
+    continueNodeID: lily_ciaran
+    choices: []
+  - nodeID: lily_ciaran
+    speaker: 1
+    dialogueText: She was hard to miss.
+    continueNodeID: lily_siobhan
+    choices: []
+  - nodeID: lily_siobhan
+    speaker: 0
+    dialogueText: And?
+    continueNodeID: lily_ciaran2
+    choices: []
+  - nodeID: lily_ciaran2
+    speaker: 1
+    dialogueText: She's grand. She was asking questions as usual.
+    continueNodeID: lily_siobhan2
+    choices: []
+  - nodeID: lily_siobhan2
+    speaker: 0
+    dialogueText: Good. She keeps you honest.
+    continueNodeID: lily_ciaran3
+    choices: []
+  - nodeID: lily_ciaran3
+    speaker: 1
+    dialogueText: Someone has to.
+    continueNodeID: maths_question
+    choices: []
+  - nodeID: maths_question
+    speaker: 0
+    dialogueText: How was maths?
+    continueNodeID:
+    choices:
+    - choiceText: Turns out I'm a genius.
+      nextNodeID: maths_high
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: I survived.
+      nextNodeID: maths_mid
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: The less said the better.
+      nextNodeID: maths_low
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: maths_high
+    speaker: 0
+    dialogueText: Is that right.
+    continueNodeID: maths_high_ciaran
+    choices: []
+  - nodeID: maths_high_ciaran
+    speaker: 1
+    dialogueText: Got most of them anyway.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: maths_mid
+    speaker: 0
+    dialogueText: High praise.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: maths_low
+    speaker: 0
+    dialogueText: That bad?
+    continueNodeID: maths_low_ciaran
+    choices: []
+  - nodeID: maths_low_ciaran
+    speaker: 1
+    dialogueText: It was fine. Just not my best.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: basketball_intro
+    speaker: 0
+    dialogueText: I heard you went out after school.
+    continueNodeID: basketball_ciaran
+    choices: []
+  - nodeID: basketball_ciaran
+    speaker: 1
+    dialogueText: News travels fast.
+    continueNodeID: basketball_siobhan
+    choices: []
+  - nodeID: basketball_siobhan
+    speaker: 0
+    dialogueText: Basketball yeah?
+    continueNodeID: basketball_ciaran2
+    choices: []
+  - nodeID: basketball_ciaran2
+    speaker: 1
+    dialogueText: Some fella from class. It was alright.
+    continueNodeID: basketball_siobhan2
+    choices: []
+  - nodeID: basketball_siobhan2
+    speaker: 0
+    dialogueText: It was more than alright. You went. That matters.
+    continueNodeID: fi_intro
+    choices: []
+  - nodeID: fi_intro
+    speaker: 0
+    dialogueText: Listen. I got a call from Focus Ireland today. From Róisín.
+    continueNodeID: fi_ciaran
+    choices: []
+  - nodeID: fi_ciaran
+    speaker: 1
+    dialogueText: Right.
+    continueNodeID: fi_siobhan
+    choices: []
+  - nodeID: fi_siobhan
+    speaker: 0
+    dialogueText: She's coming tomorrow morning. Says there might be something for us.
+    continueNodeID: fi_ciaran2
+    choices: []
+  - nodeID: fi_ciaran2
+    speaker: 1
+    dialogueText: A place?
+    continueNodeID: fi_siobhan2
+    choices: []
+  - nodeID: fi_siobhan2
+    speaker: 0
+    dialogueText: Maybe. She didn't want to say too much yet.
+    continueNodeID: fi_ciaran3
+    choices: []
+  - nodeID: fi_ciaran3
+    speaker: 1
+    dialogueText: So we just wait.
+    continueNodeID: fi_siobhan3
+    choices: []
+  - nodeID: fi_siobhan3
+    speaker: 0
+    dialogueText: We just wait. But it's good news Ciarán.
+    continueNodeID: fi_ciaran4
+    choices: []
+  - nodeID: fi_ciaran4
+    speaker: 1
+    dialogueText: Yeah. It is.
+    continueNodeID: closing
+    choices: []
+  - nodeID: closing
+    speaker: 0
+    dialogueText: Get some sleep. You did well today, even if you won't admit it.
+    continueNodeID:
+    choices: []

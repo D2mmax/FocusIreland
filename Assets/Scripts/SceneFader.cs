@@ -50,8 +50,7 @@ public class SceneFader : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name != "IntroScene" && scene.name != "StartScene")
-            StartCoroutine(FadeInDelayed());
+        StartCoroutine(FadeInDelayed());
     }
 
     IEnumerator FadeInDelayed()
@@ -69,8 +68,6 @@ public class SceneFader : MonoBehaviour
             StartCoroutine(FadeOutAndLoad(sceneName));
     }
 
-    // Fades to black, shows text, fires onBlack callback (start dialogue here),
-    // holds briefly, then fades back in so dialogue is already visible on reveal
     public void FadeToBlackWithText(string text, float holdDuration, System.Action onBlack)
     {
         if (!isFading)
@@ -82,7 +79,6 @@ public class SceneFader : MonoBehaviour
         isFading = true;
         fadeImage.raycastTarget = true;
 
-        // Fade to black
         float t = 0f;
         while (t < 1f)
         {
@@ -92,7 +88,6 @@ public class SceneFader : MonoBehaviour
         }
         SetAlpha(1f);
 
-        // Show text
         if (timeskipText != null)
         {
             timeskipText.text = text;
@@ -101,14 +96,11 @@ public class SceneFader : MonoBehaviour
 
         yield return new WaitForSeconds(holdDuration);
 
-        // Fire callback (start dialogue) while still black
         onBlack?.Invoke();
 
-        // Brief pause to let dialogue system initialise
         yield return null;
         yield return null;
 
-        // Hide text and fade back in — dialogue already running underneath
         if (timeskipText != null) timeskipText.gameObject.SetActive(false);
 
         isFading = false;

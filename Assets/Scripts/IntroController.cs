@@ -12,7 +12,7 @@ public class IntroController : MonoBehaviour
     {
         "Every night in Ireland, over 4,000 people sleep in emergency accommodation.",
         "More than 1,500 of them are children.",
-        "This is one week of one of their lives."
+        "This is one day of one of their lives."
     };
 
     IEnumerator Start()
@@ -24,7 +24,6 @@ public class IntroController : MonoBehaviour
 
         foreach (string line in lines)
         {
-            // Fade text in
             introText.text = line;
             float t = 0f;
             while (t < 1f)
@@ -36,7 +35,6 @@ public class IntroController : MonoBehaviour
 
             yield return new WaitForSeconds(holdPerLine);
 
-            // Fade text out
             t = 0f;
             while (t < 1f)
             {
@@ -48,8 +46,6 @@ public class IntroController : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
         }
 
-        Debug.Log("[IntroController] Lines done. SceneFader is: " + (SceneFader.Instance != null ? "FOUND" : "NULL"));
-        // All lines done, fade to shelter
         if (SceneFader.Instance != null)
         {
             SceneFader.Instance.ForceReady();

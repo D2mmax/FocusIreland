@@ -39,21 +39,21 @@ MonoBehaviour:
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
-        connectionDelta: 1
+        connectionDelta: 0
       modeTag: humour
     - choiceText: It's just a lot going on. With the move and stuff.
       nextNodeID: honest_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
-        connectionDelta: 2
+        connectionDelta: 5
       modeTag: honest
     - choiceText: Can we just eat.
       nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
-        connectionDelta: 0
+        connectionDelta: -15
       modeTag: shutdown
   - nodeID: humour_1
     speaker: 0

@@ -6,9 +6,9 @@ public class EHCManager : MonoBehaviour
     public static EHCManager Instance { get; private set; }
 
     [Header("Starting Values (0-100)")]
-    [Range(0, 100)] public int energy     = 50;
-    [Range(0, 100)] public int hope       = 50;
-    [Range(0, 100)] public int connection = 50;
+    [Range(0, 100)] public int energy     = 100;
+    [Range(0, 100)] public int hope       = 100;
+    [Range(0, 100)] public int connection = 100;
 
     [Header("HUD Image References")]
     public Image energyImage;

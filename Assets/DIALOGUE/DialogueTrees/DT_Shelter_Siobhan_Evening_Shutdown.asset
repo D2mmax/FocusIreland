@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Siobhan_Evening_Shutdown
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: How was it?
+    continueNodeID: ciaran_1
+    choices: []
+  - nodeID: ciaran_1
+    speaker: 1
+    dialogueText: Fine.
+    continueNodeID: siobhan_2
+    choices: []
+  - nodeID: siobhan_2
+    speaker: 0
+    dialogueText: Just fine?
+    continueNodeID: ciaran_2
+    choices: []
+  - nodeID: ciaran_2
+    speaker: 1
+    dialogueText: Yeah.
+    continueNodeID: hw_question
+    choices: []
+  - nodeID: hw_question
+    speaker: 0
+    dialogueText: Did you hand in your homework?
+    continueNodeID:
+    choices:
+    - choiceText: Yeah.
+      nextNodeID: hw_pass
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: Couldn't find it.
+      nextNodeID: hw_fail
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: hw_pass
+    speaker: 0
+    dialogueText: Good.
+    continueNodeID: hard_day
+    choices: []
+  - nodeID: hw_fail
+    speaker: 0
+    dialogueText: Bring it tomorrow. It's okay.
+    continueNodeID: hard_day
+    choices: []
+  - nodeID: hard_day
+    speaker: 0
+    dialogueText: I know days like this are hard.
+    continueNodeID: ciaran_3
+    choices: []
+  - nodeID: ciaran_3
+    speaker: 1
+    dialogueText: I'm fine Mam.
+    continueNodeID: siobhan_3
+    choices: []
+  - nodeID: siobhan_3
+    speaker: 0
+    dialogueText: I know you are.
+    continueNodeID: lily_intro
+    choices: []
+  - nodeID: lily_intro
+    speaker: 0
+    dialogueText: Lily texted me. Said she was glad she got to see you today.
+    continueNodeID: ciaran_4
+    choices: []
+  - nodeID: ciaran_4
+    speaker: 1
+    dialogueText: She texts you?
+    continueNodeID: siobhan_4
+    choices: []
+  - nodeID: siobhan_4
+    speaker: 0
+    dialogueText: She does yeah. She worries about you.
+    continueNodeID: ciaran_5
+    choices: []
+  - nodeID: ciaran_5
+    speaker: 1
+    dialogueText: '...'
+    continueNodeID: siobhan_5
+    choices: []
+  - nodeID: siobhan_5
+    speaker: 0
+    dialogueText: That's a good thing.
+    continueNodeID: maths_question
+    choices: []
+  - nodeID: maths_question
+    speaker: 0
+    dialogueText: How did maths go?
+    continueNodeID:
+    choices:
+    - choiceText: Fine. Got most of them.
+      nextNodeID: maths_high
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: Okay.
+      nextNodeID: maths_mid
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: Not great.
+      nextNodeID: maths_low
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: maths_high
+    speaker: 0
+    dialogueText: There you go.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: maths_mid
+    speaker: 0
+    dialogueText: Okay is fine.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: maths_low
+    speaker: 0
+    dialogueText: First day back. Don't be hard on yourself.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: basketball_intro
+    speaker: 0
+    dialogueText: Pat said you went out after school. Basketball.
+    continueNodeID: ciaran_6
+    choices: []
+  - nodeID: ciaran_6
+    speaker: 1
+    dialogueText: Just for a bit.
+    continueNodeID: siobhan_6
+    choices: []
+  - nodeID: siobhan_6
+    speaker: 0
+    dialogueText: I'm glad. You needed some air.
+    continueNodeID: fi_intro
+    choices: []
+  - nodeID: fi_intro
+    speaker: 0
+    dialogueText: I got a call from Focus Ireland today. From Róisín.
+    continueNodeID: ciaran_7
+    choices: []
+  - nodeID: ciaran_7
+    speaker: 1
+    dialogueText: Yeah?
+    continueNodeID: fi_siobhan
+    choices: []
+  - nodeID: fi_siobhan
+    speaker: 0
+    dialogueText: She's coming tomorrow morning. Says there might be something for us.
+    continueNodeID: ciaran_8
+    choices: []
+  - nodeID: ciaran_8
+    speaker: 1
+    dialogueText: Like a place?
+    continueNodeID: fi_siobhan2
+    choices: []
+  - nodeID: fi_siobhan2
+    speaker: 0
+    dialogueText: Maybe. We'll see tomorrow.
+    continueNodeID: fi_siobhan3
+    choices: []
+  - nodeID: fi_siobhan3
+    speaker: 0
+    dialogueText: You don't have to say anything. Just know that I see you. Yeah?
+    continueNodeID: ciaran_9
+    choices: []
+  - nodeID: ciaran_9
+    speaker: 1
+    dialogueText: Yeah.
+    continueNodeID: closing
+    choices: []
+  - nodeID: closing
+    speaker: 0
+    dialogueText: Get some sleep.
+    continueNodeID:
+    choices: []

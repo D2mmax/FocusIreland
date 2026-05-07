@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Siobhan_Evening_Honest
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: How was it? Honestly.
+    continueNodeID: ciaran_1
+    choices: []
+  - nodeID: ciaran_1
+    speaker: 1
+    dialogueText: It was alright. Long.
+    continueNodeID: hw_question
+    choices: []
+  - nodeID: hw_question
+    speaker: 0
+    dialogueText: Did you hand in your homework?
+    continueNodeID:
+    choices:
+    - choiceText: Yeah. Found it in time.
+      nextNodeID: hw_pass
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: Couldn't find it. Everything got mixed up.
+      nextNodeID: hw_fail
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: hw_pass
+    speaker: 0
+    dialogueText: Good man.
+    continueNodeID: darragh_intro
+    choices: []
+  - nodeID: hw_fail
+    speaker: 0
+    dialogueText: That's okay. Bring it tomorrow.
+    continueNodeID: darragh_intro
+    choices: []
+  - nodeID: darragh_intro
+    speaker: 0
+    dialogueText: Anything else happen?
+    continueNodeID: darragh_ciaran
+    choices: []
+  - nodeID: darragh_ciaran
+    speaker: 1
+    dialogueText: There was this fella in class. Said something about my jumper.
+    continueNodeID: darragh_siobhan
+    choices: []
+  - nodeID: darragh_siobhan
+    speaker: 0
+    dialogueText: What did he say?
+    continueNodeID: darragh_ciaran2
+    choices: []
+  - nodeID: darragh_ciaran2
+    speaker: 1
+    dialogueText: Just that I was wearing the same one. He didn't mean anything by it.
+    continueNodeID: darragh_siobhan2
+    choices: []
+  - nodeID: darragh_siobhan2
+    speaker: 0
+    dialogueText: Still.
+    continueNodeID: darragh_ciaran3
+    choices: []
+  - nodeID: darragh_ciaran3
+    speaker: 1
+    dialogueText: I know.
+    continueNodeID: lily_intro
+    choices: []
+  - nodeID: lily_intro
+    speaker: 0
+    dialogueText: And Lily? Did you see her?
+    continueNodeID: lily_ciaran
+    choices: []
+  - nodeID: lily_ciaran
+    speaker: 1
+    dialogueText: Yeah. She asked if I was okay.
+    continueNodeID: lily_siobhan
+    choices: []
+  - nodeID: lily_siobhan
+    speaker: 0
+    dialogueText: What did you tell her?
+    continueNodeID: lily_ciaran2
+    choices: []
+  - nodeID: lily_ciaran2
+    speaker: 1
+    dialogueText: The truth. Sort of.
+    continueNodeID: lily_siobhan2
+    choices: []
+  - nodeID: lily_siobhan2
+    speaker: 0
+    dialogueText: Good. She's a good friend.
+    continueNodeID: maths_question
+    choices: []
+  - nodeID: maths_question
+    speaker: 0
+    dialogueText: How did maths go?
+    continueNodeID:
+    choices:
+    - choiceText: Grand actually. Got most of them.
+      nextNodeID: maths_high
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 1
+        connectionDelta: 0
+    - choiceText: Not bad. Could've been better.
+      nextNodeID: maths_mid
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+    - choiceText: Wasn't great.
+      nextNodeID: maths_low
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: maths_high
+    speaker: 0
+    dialogueText: See? I knew you would.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: maths_mid
+    speaker: 0
+    dialogueText: You did your best. That's enough.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: maths_low
+    speaker: 0
+    dialogueText: It's one test. Don't let it follow you home.
+    continueNodeID: basketball_intro
+    choices: []
+  - nodeID: basketball_intro
+    speaker: 0
+    dialogueText: And I heard you went out after school?
+    continueNodeID: basketball_ciaran
+    choices: []
+  - nodeID: basketball_ciaran
+    speaker: 1
+    dialogueText: Basketball. With a fella from class.
+    continueNodeID: basketball_siobhan
+    choices: []
+  - nodeID: basketball_siobhan
+    speaker: 0
+    dialogueText: That's good. That's really good Ciarán.
+    continueNodeID: fi_intro
+    choices: []
+  - nodeID: fi_intro
+    speaker: 0
+    dialogueText: Listen. I got a call from Focus Ireland today. From Róisín.
+    continueNodeID: fi_ciaran
+    choices: []
+  - nodeID: fi_ciaran
+    speaker: 1
+    dialogueText: Yeah?
+    continueNodeID: fi_siobhan
+    choices: []
+  - nodeID: fi_siobhan
+    speaker: 0
+    dialogueText: She's coming tomorrow morning. Says there might be something for us.
+    continueNodeID: fi_ciaran2
+    choices: []
+  - nodeID: fi_ciaran2
+    speaker: 1
+    dialogueText: Like a place?
+    continueNodeID: fi_siobhan2
+    choices: []
+  - nodeID: fi_siobhan2
+    speaker: 0
+    dialogueText: Maybe. She didn't want to say too much yet.
+    continueNodeID: fi_ciaran3
+    choices: []
+  - nodeID: fi_ciaran3
+    speaker: 1
+    dialogueText: Right.
+    continueNodeID: fi_closing
+    choices: []
+  - nodeID: fi_closing
+    speaker: 0
+    dialogueText: Try not to think about it too much tonight. Just sleep.
+    continueNodeID: fi_ciaran4
+    choices: []
+  - nodeID: fi_ciaran4
+    speaker: 1
+    dialogueText: Okay.
+    continueNodeID: closing
+    choices: []
+  - nodeID: closing
+    speaker: 0
+    dialogueText: You did well today. I mean it.
+    continueNodeID:
+    choices: []
