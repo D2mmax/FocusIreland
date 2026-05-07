@@ -15,11 +15,11 @@ MonoBehaviour:
   npcName: Mr Byrne
   npcSprite: {fileID: 0}
   dynamicNPCSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 623639467, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
+  - {fileID: 316381109, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
+  - {fileID: 1900295780, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
+  - {fileID: 289131883, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
+  - {fileID: -1352356520, guid: 379eb86e0d37c8a4185b8e0a6d002a0e, type: 3}
   playerSprite: {fileID: 0}
   backgroundSprite: {fileID: 0}
   repeatLine: 

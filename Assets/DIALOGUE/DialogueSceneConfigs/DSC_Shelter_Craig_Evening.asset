@@ -15,14 +15,14 @@ MonoBehaviour:
   npcName: Craig
   npcSprite: {fileID: 0}
   dynamicNPCSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  playerSprite: {fileID: 0}
-  backgroundSprite: {fileID: 0}
+  - {fileID: -1900200110, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 742768872, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 581078239, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 450500120, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  - {fileID: 622854326, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
+  playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 738f8987dfd6e9145ab2a885614e15af, type: 3}
   repeatLine: She's still over there.
-  hideNPCSprite: 1
-  hidePlayerSprite: 1
-  hideBackground: 1
+  hideNPCSprite: 0
+  hidePlayerSprite: 0
+  hideBackground: 0

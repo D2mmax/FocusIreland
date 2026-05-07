@@ -21,8 +21,8 @@ MonoBehaviour:
   - {fileID: 450500120, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
   - {fileID: 622854326, guid: 8dca1bd5e11b2d84590fd6cb96444b51, type: 3}
   playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 738f8987dfd6e9145ab2a885614e15af, type: 3}
   repeatLine: You better get going to school.
   hideNPCSprite: 0
   hidePlayerSprite: 0
-  hideBackground: 1
+  hideBackground: 0
