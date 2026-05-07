@@ -2074,7 +2074,7 @@ Transform:
   m_GameObject: {fileID: 413294931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72.16, y: 1.25, z: -131.25916}
+  m_LocalPosition: {x: -72.16, y: 1.35, z: -131.25916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3593,10 +3593,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f356a8cda1d2e41b0dd2a9f84ca7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSpawner
-  defaultSpawn: {fileID: 1522458452}
-  doorSpawn: {fileID: 0}
-  schoolSpawn: {fileID: 413294932}
-  expectedDoorID: schooldoorinside
+  bedroomSpawn: {fileID: 0}
+  patDeskSpawn: {fileID: 0}
+  aoifeSpawn: {fileID: 0}
+  shelterDoorSpawn: {fileID: 1522458452}
+  schoolDoorSpawn: {fileID: 413294932}
 --- !u!114 &905249814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6256,7 +6257,7 @@ Transform:
   m_GameObject: {fileID: 1522458451}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -71.249, y: 1.284, z: -37.051}
+  m_LocalPosition: {x: -71.249, y: 1.35, z: -37.051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

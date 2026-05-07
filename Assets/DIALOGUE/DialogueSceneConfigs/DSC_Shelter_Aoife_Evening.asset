@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 0}
   playerSprite: {fileID: 0}
   backgroundSprite: {fileID: 0}
-  repeatLine: 
+  repeatLine: Thank you for helping me.
   hideNPCSprite: 1
   hidePlayerSprite: 1
   hideBackground: 1
