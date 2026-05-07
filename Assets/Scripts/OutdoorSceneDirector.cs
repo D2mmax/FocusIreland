@@ -3,27 +3,42 @@ using UnityEngine;
 public class OutdoorSceneDirector : MonoBehaviour
 {
     [Header("Morning Objects (active before school)")]
-    public GameObject morningBusStopTrigger;
-    public GameObject lily;
+    public GameObject[] morningObjects;
 
-    [Header("Afternoon Objects (active after school)")]
-    public GameObject marcus;
+    [Header("After School Objects (active after school, before basketball)")]
+    public GameObject[] afterSchoolObjects;
+
+    [Header("Post Basketball Objects (active after basketball)")]
+    public GameObject[] postBasketballObjects;
 
     void Start()
     {
-        if (DayFlags.schoolCompleted)
+        // Disable everything first
+        SetActive(morningObjects, false);
+        SetActive(afterSchoolObjects, false);
+        SetActive(postBasketballObjects, false);
+
+        if (DayFlags.basketballCompleted)
         {
-            // After school — disable morning objects, enable afternoon objects
-            if (morningBusStopTrigger != null) morningBusStopTrigger.SetActive(false);
-            if (lily != null) lily.SetActive(false);
-            if (marcus != null) marcus.SetActive(true);
+            SetActive(postBasketballObjects, true);
+        }
+        else if (DayFlags.schoolCompleted)
+        {
+            SetActive(afterSchoolObjects, true);
         }
         else
         {
-            // Morning — enable morning objects, disable afternoon objects
-            if (morningBusStopTrigger != null) morningBusStopTrigger.SetActive(true);
-            if (lily != null) lily.SetActive(true);
-            if (marcus != null) marcus.SetActive(false);
+            SetActive(morningObjects, true);
+        }
+    }
+
+    void SetActive(GameObject[] objects, bool active)
+    {
+        if (objects == null) return;
+        foreach (GameObject obj in objects)
+        {
+            if (obj != null)
+                obj.SetActive(active);
         }
     }
 }

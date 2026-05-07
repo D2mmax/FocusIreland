@@ -16,7 +16,7 @@ public class ScoreManager : MonoBehaviour
     public int maxScore = 16;
 
     [Header("Scene Transition")]
-    public string sceneToLoadOnComplete = "ShelterScene";
+    public string sceneToLoadOnComplete = "OutdoorScene";
     public float completionDelay = 2f;
 
     private bool gameOver = false;
@@ -54,7 +54,6 @@ public class ScoreManager : MonoBehaviour
         yield return new WaitForSeconds(completionDelay);
 
         DayFlags.basketballCompleted = true;
-        DayFlags.shelterState = 1;
 
         if (SceneFader.Instance != null)
             SceneFader.Instance.FadeTo(sceneToLoadOnComplete);

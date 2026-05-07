@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9110263bbb4dc9f46a3f7f909b4ddabf, type: 3}
+  m_Name: DSC_Street_Marcus_PostBasketball
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
+  npcName: Marcus
+  npcSprite: {fileID: 1985536045, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  dynamicNPCSprites:
+  - {fileID: 1985536045, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 1821274980, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: -1934647235, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 876288933, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  - {fileID: 1318039224, guid: bb927e7d937cd80449329da1f151a2cf, type: 3}
+  playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 1fe38c4382f9292439f550aa1ceb7230, type: 3}
+  repeatLine: See you tommorow!
+  hideNPCSprite: 0
+  hidePlayerSprite: 0
+  hideBackground: 0
