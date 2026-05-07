@@ -25,18 +25,21 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+      modeTag: humour
     - choiceText: Yeah, yesterday. I'm Ciarán.
       nextNodeID: honest_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 2
+      modeTag: honest
     - choiceText: Yeah.
       nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: shutdown
   - nodeID: humour_1
     speaker: 0
     dialogueText: Little bit.
@@ -73,18 +76,21 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+      modeTag: 
     - choiceText: Yeah. You not going?
       nextNodeID: honest_2
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 2
+      modeTag: 
     - choiceText: Yeah.
       nextNodeID: shutdown_2
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: 
   - nodeID: humour_2
     speaker: 0
     dialogueText: Fair enough. Better than sitting here anyway.

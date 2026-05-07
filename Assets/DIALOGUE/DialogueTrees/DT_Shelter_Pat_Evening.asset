@@ -25,18 +25,21 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+      modeTag: humour
     - choiceText: Not bad actually.
       nextNodeID: honest_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 2
+      modeTag: honest
     - choiceText: (Nod and keep walking.)
       nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: shutdown
   - nodeID: humour_1
     speaker: 0
     dialogueText: Ha. That bad.
@@ -63,18 +66,21 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+      modeTag: 
     - choiceText: Thanks Pat.
       nextNodeID: honest_2
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 2
+      modeTag: 
     - choiceText: (Keep walking.)
       nextNodeID: shutdown_2
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: 
   - nodeID: humour_2
     speaker: 0
     dialogueText: Something hot. That's all I know.

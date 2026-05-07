@@ -25,18 +25,21 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+      modeTag: humour
     - choiceText: Yeah. So what.
       nextNodeID: honest_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: honest
     - choiceText: (Say nothing. Look back at your copy.)
       nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: -1
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: shutdown
   - nodeID: humour_1
     speaker: 0
     dialogueText: Ah right yeah.

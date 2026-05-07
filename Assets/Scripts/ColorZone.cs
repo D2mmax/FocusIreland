@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class ColorBucket : MonoBehaviour
 {
@@ -7,7 +7,7 @@ public class ColorBucket : MonoBehaviour
     public AudioClip correctSound;
     public AudioClip wrongSound;
 
-    public GameObject confettiPrefab; // NOTE: GameObject now
+    public GameObject confettiPrefab;
 
     private AudioSource audioSource;
 
@@ -24,25 +24,26 @@ public class ColorBucket : MonoBehaviour
         {
             if (crayon.colorType == bucketColor)
             {
-                audioSource.PlayOneShot(correctSound);
+                if (audioSource != null && correctSound != null)
+                    audioSource.PlayOneShot(correctSound);
 
-                // 🔥 SPAWN CONFETTI
                 if (confettiPrefab != null)
                 {
-                    GameObject confetti = Instantiate(
-                        confettiPrefab,
-                        transform.position,
-                        Quaternion.identity
-                    );
-
-                    Destroy(confetti, 2f); // clean up after playing
+                    GameObject confetti = Instantiate(confettiPrefab, transform.position, Quaternion.identity);
+                    Destroy(confetti, 2f);
                 }
 
                 Destroy(other.gameObject, 0.1f);
+
+                // Notify manager that a crayon was sorted correctly
+                if (CrayonSortManager.Instance != null)
+                    CrayonSortManager.Instance.OnCrayonSorted();
             }
             else
             {
-                audioSource.PlayOneShot(wrongSound);
+                if (audioSource != null && wrongSound != null)
+                    audioSource.PlayOneShot(wrongSound);
+
                 crayon.ReturnToStart();
             }
         }

@@ -30,18 +30,21 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 1
+      modeTag: humour
     - choiceText: I didn't really sleep either.
       nextNodeID: honest_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 2
+      modeTag: honest
     - choiceText: (Nod and keep walking.)
       nextNodeID: shutdown_1
       ehcEffect:
         energyDelta: 0
         hopeDelta: 0
         connectionDelta: 0
+      modeTag: shutdown
   - nodeID: humour_1
     speaker: 0
     dialogueText: Ah, I'm only giving out.
@@ -73,12 +76,14 @@ MonoBehaviour:
         energyDelta: 0
         hopeDelta: 1
         connectionDelta: 0
+      modeTag: 
     - choiceText: Do you work all night?
       nextNodeID: honest_2
       ehcEffect:
         energyDelta: 0
         hopeDelta: 2
         connectionDelta: 0
+      modeTag: 
   - nodeID: humour_2
     speaker: 0
     dialogueText: Ah, just don't tell the others.

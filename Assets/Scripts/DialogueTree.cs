@@ -27,6 +27,9 @@ public class DialogueChoice
 
     [Tooltip("EHC stat changes triggered by picking this choice")]
     public EHCEffect ehcEffect;
+
+    [Tooltip("Mode tag for tracking dominant play style. Use: humour, honest, shutdown. Leave empty to not track.")]
+    public string modeTag;
 }
 
 // ---------------------------------------------------------------------------

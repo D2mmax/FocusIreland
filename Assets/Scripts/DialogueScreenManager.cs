@@ -36,10 +36,8 @@ public class DialogueScreenManager : MonoBehaviour
     private DialogueTree currentTree;
     private DialogueNode currentNode;
 
-    // Optional callback fired when dialogue ends — used by NPCInteraction for scene loads
     private System.Action onDialogueEndCallback;
 
-    // Prevents E key from closing immediately after opening
     private float inputCooldown = 0f;
     private const float COOLDOWN_DURATION = 0.2f;
 
@@ -62,7 +60,7 @@ public class DialogueScreenManager : MonoBehaviour
     public void StartRepeatDialogue(DialogueSceneConfig config)
     {
         backgroundImage.sprite = config.backgroundSprite;
-        npcImage.sprite        = config.GetCurrentNPCSprite(); // Updated to get dynamic sprite
+        npcImage.sprite        = config.GetCurrentNPCSprite();
         playerImage.sprite     = config.playerSprite;
         npcNameText.text       = config.npcName;
         dialogueText.text      = config.repeatLine;
@@ -85,7 +83,7 @@ public class DialogueScreenManager : MonoBehaviour
         currentTree = tree;
 
         backgroundImage.sprite = config.backgroundSprite;
-        npcImage.sprite        = config.GetCurrentNPCSprite(); // Updated to get dynamic sprite
+        npcImage.sprite        = config.GetCurrentNPCSprite();
         playerImage.sprite     = config.playerSprite;
         npcNameText.text       = config.npcName;
 
@@ -106,11 +104,8 @@ public class DialogueScreenManager : MonoBehaviour
 
         bool isPlayerSpeaking = node.speaker == DialogueNode.Speaker.Player;
 
-        // NPC side
         if (npcNameText != null)        npcNameText.gameObject.SetActive(!isPlayerSpeaking);
         if (dialogueText != null)       dialogueText.gameObject.SetActive(!isPlayerSpeaking);
-
-        // Player side
         if (playerNameText != null)     playerNameText.gameObject.SetActive(isPlayerSpeaking);
         if (playerDialogueText != null) playerDialogueText.gameObject.SetActive(isPlayerSpeaking);
 
@@ -170,6 +165,19 @@ public class DialogueScreenManager : MonoBehaviour
 
         if (EHCManager.Instance != null)
             EHCManager.Instance.ApplyEffect(choice.ehcEffect);
+
+        // Track dominant mode if this choice has a modeTag
+        if (!string.IsNullOrEmpty(choice.modeTag))
+        {
+            switch (choice.modeTag)
+            {
+                case "humour":   DayFlags.humourChoices++;   break;
+                case "honest":   DayFlags.honestChoices++;   break;
+                case "shutdown": DayFlags.shutdownChoices++; break;
+            }
+
+            Debug.Log($"[ModeTracker] Tagged choice: '{choice.modeTag}' | Humour: {DayFlags.humourChoices} | Honest: {DayFlags.honestChoices} | Shutdown: {DayFlags.shutdownChoices} | Dominant: {DayFlags.GetDominantMode()}");
+        }
 
         if (string.IsNullOrEmpty(choice.nextNodeID))
             EndDialogue();
