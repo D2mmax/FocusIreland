@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: DSC_Shelter_Aoife_Evening
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSceneConfig
   npcName: Aoife
-  npcSprite: {fileID: 0}
+  npcSprite: {fileID: 1741028733, guid: 0f6a1ba77b2db9a478033328ea5ef190, type: 3}
   dynamicNPCSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  playerSprite: {fileID: 0}
+  - {fileID: 1741028733, guid: 0f6a1ba77b2db9a478033328ea5ef190, type: 3}
+  - {fileID: 725631133, guid: 0f6a1ba77b2db9a478033328ea5ef190, type: 3}
+  - {fileID: -442865071, guid: 0f6a1ba77b2db9a478033328ea5ef190, type: 3}
+  - {fileID: 1514670536, guid: 0f6a1ba77b2db9a478033328ea5ef190, type: 3}
+  - {fileID: -218377166, guid: 0f6a1ba77b2db9a478033328ea5ef190, type: 3}
+  playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
   backgroundSprite: {fileID: 0}
   repeatLine: Thank you for helping me.
   hideNPCSprite: 1

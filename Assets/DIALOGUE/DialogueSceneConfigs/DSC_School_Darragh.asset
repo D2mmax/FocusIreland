@@ -15,14 +15,14 @@ MonoBehaviour:
   npcName: Darragh
   npcSprite: {fileID: 0}
   dynamicNPCSprites:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  playerSprite: {fileID: 0}
-  backgroundSprite: {fileID: 0}
+  - {fileID: -367469425, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: 2132163187, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: -302233259, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: 1389949857, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  - {fileID: 453003574, guid: 9593390918cfa5c42a9b3b759cfa47e2, type: 3}
+  playerSprite: {fileID: 780953723, guid: 46136b9b03c0d6149976bdb0cf134426, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 807ebc57069fd8b448072bcea9b68215, type: 3}
   repeatLine: 
-  hideNPCSprite: 1
-  hidePlayerSprite: 1
-  hideBackground: 1
+  hideNPCSprite: 0
+  hidePlayerSprite: 0
+  hideBackground: 0
