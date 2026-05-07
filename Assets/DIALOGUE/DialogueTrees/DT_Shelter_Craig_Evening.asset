@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Craig_Evening
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: How was it?
+    continueNodeID:
+    choices:
+    - choiceText: School? Deadly. Can't get enough of it.
+      nextNodeID: humour_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Alright actually. Long though.
+      nextNodeID: honest_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: Fine.
+      nextNodeID: shutdown_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: humour_1
+    speaker: 0
+    dialogueText: Ha. That good.
+    continueNodeID: converge
+    choices: []
+  - nodeID: honest_1
+    speaker: 0
+    dialogueText: Yeah. They go on forever.
+    continueNodeID: converge
+    choices: []
+  - nodeID: shutdown_1
+    speaker: 0
+    dialogueText: Fair enough.
+    continueNodeID: converge
+    choices: []
+  - nodeID: converge
+    speaker: 0
+    dialogueText: Aoife's been asking about you by the way.
+    continueNodeID: ciaran_1
+    choices: []
+  - nodeID: ciaran_1
+    speaker: 1
+    dialogueText: Yeah?
+    continueNodeID: craig_2
+    choices: []
+  - nodeID: craig_2
+    speaker: 0
+    dialogueText: She does that. Decides someone's her friend whether they like it or not.
+    continueNodeID: craig_3
+    choices: []
+  - nodeID: craig_3
+    speaker: 0
+    dialogueText: She's over there if you want to say hello.
+    continueNodeID:
+    choices: []

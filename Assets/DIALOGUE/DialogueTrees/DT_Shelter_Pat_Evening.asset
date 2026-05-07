@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d52d21a72ca374996a821ea5a856cc, type: 3}
+  m_Name: DT_Shelter_Pat_Evening
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTree
+  startNodeID: start
+  nodes:
+  - nodeID: start
+    speaker: 0
+    dialogueText: Back already. Good day?
+    continueNodeID:
+    choices:
+    - choiceText: Define good.
+      nextNodeID: humour_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Not bad actually.
+      nextNodeID: honest_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: (Nod and keep walking.)
+      nextNodeID: shutdown_1
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: humour_1
+    speaker: 0
+    dialogueText: Ha. That bad.
+    continueNodeID: converge
+    choices: []
+  - nodeID: honest_1
+    speaker: 0
+    dialogueText: Good man.
+    continueNodeID: converge
+    choices: []
+  - nodeID: shutdown_1
+    speaker: 0
+    dialogueText: Mmhm.
+    continueNodeID: converge
+    choices: []
+  - nodeID: converge
+    speaker: 0
+    dialogueText: Dinner's out in the common room if you're hungry.
+    continueNodeID:
+    choices:
+    - choiceText: What is it?
+      nextNodeID: humour_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 1
+    - choiceText: Thanks Pat.
+      nextNodeID: honest_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 2
+    - choiceText: (Keep walking.)
+      nextNodeID: shutdown_2
+      ehcEffect:
+        energyDelta: 0
+        hopeDelta: 0
+        connectionDelta: 0
+  - nodeID: humour_2
+    speaker: 0
+    dialogueText: Something hot. That's all I know.
+    continueNodeID:
+    choices: []
+  - nodeID: honest_2
+    speaker: 0
+    dialogueText: Away with you.
+    continueNodeID:
+    choices: []
+  - nodeID: shutdown_2
+    speaker: 0
+    dialogueText: Mind yourself.
+    continueNodeID:
+    choices: []
