@@ -1994,7 +1994,7 @@ MonoBehaviour:
   scoreText: {fileID: 578564755}
   completionText: {fileID: 1388722568}
   maxScore: 16
-  sceneToLoadOnComplete: ShelterScene
+  sceneToLoadOnComplete: OutdoorScene
   completionDelay: 2
 --- !u!114 &1891068940
 MonoBehaviour:

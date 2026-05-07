@@ -47,6 +47,7 @@ public class CrayonSortManager : MonoBehaviour
         yield return new WaitForSeconds(completionDelay);
 
         DayFlags.crayonSortCompleted = true;
+        DayFlags.shelterState = 2;
 
         if (SceneFader.Instance != null)
             SceneFader.Instance.FadeTo(sceneToLoadOnComplete);

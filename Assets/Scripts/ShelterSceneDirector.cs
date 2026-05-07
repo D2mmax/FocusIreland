@@ -8,17 +8,19 @@ public class ShelterSceneDirector : MonoBehaviour
     [Header("Evening After School (State 1)")]
     public GameObject[] eveningObjects;
 
-    [Header("Next Morning (State 2)")]
+    [Header("Post Crayon Sort (State 2)")]
+    public GameObject[] postCrayonObjects;
+
+    [Header("Next Morning (State 3)")]
     public GameObject[] nextMorningObjects;
 
     void Start()
     {
-        // Disable everything first
         SetActive(morningObjects, false);
         SetActive(eveningObjects, false);
+        SetActive(postCrayonObjects, false);
         SetActive(nextMorningObjects, false);
 
-        // Enable the correct set based on current state
         switch (DayFlags.shelterState)
         {
             case 0:
@@ -28,6 +30,9 @@ public class ShelterSceneDirector : MonoBehaviour
                 SetActive(eveningObjects, true);
                 break;
             case 2:
+                SetActive(postCrayonObjects, true);
+                break;
+            case 3:
                 SetActive(nextMorningObjects, true);
                 break;
         }
